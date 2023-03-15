@@ -1,13 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import RoutesComp from "./routes";
+import ThemeProvider from "./routes/layouts/components/ThemeContext";
+import { Provider } from 'react-redux';
+import store from './store';
 
 function App() {
   return (
-    <div className="bg-black text-white h-screen">
-    <p className='bg-[#ccf] text-[#407] text-2xl'>hello</p>
-      <p className='bg-[#ccf] text-[#306] text-sm'>hello</p>
-      
-    </div>
+    <Provider store={store} >
+      <ThemeProvider>
+        <RoutesComp />
+      </ThemeProvider>
+    </Provider>
   );
 }
 
