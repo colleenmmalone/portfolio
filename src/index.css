@@ -20,3 +20,8 @@ code {
   @apply px-7;
   @apply py-1
 }
+
+.div-scroll{
+  height: calc(100vh - 56px) !important;
+  overflow-y: scroll;
+}
