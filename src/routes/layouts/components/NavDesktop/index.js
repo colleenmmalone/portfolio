@@ -2,12 +2,13 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleDarkMode } from "../../../../store/slices/toggleDarkModeSlice";
 const NavDesktop = () => {
-    const isDark = useSelector((state) => state.toggleDarkMode.toggled);
+  const isDark = useSelector((state) => state.toggleDarkMode.toggled);
+  const theme = useSelector((state) => state.changeTheme.theme);
 
     const dispatch = useDispatch();
 
     return (
-        <div className="bg-purple text-cream w-full m-0 px-7 py-1 flex">
+        <div className={`bg-${theme}-nav text-white w-full m-0 px-7 py-1 flex`}>
             <a className="mr-auto" href="/">
             <p className=" text-[1.9rem]" >Colleen Malone</p>
             </a>
@@ -24,7 +25,7 @@ const NavDesktop = () => {
                   onClick={() => {
                     dispatch(toggleDarkMode());
                   }}
-                  className="w-[62px] h-6 bg-clay-light rounded-full peer peer-focus:ring-clay peer-checked:after:translate-x-[37px] peer-checked:after:border-clay after:content-[''] after:absolute after:top-0.5 after:left-[2px] peer-checked:after:right-[2px] after:bg-cream after:border-[#fcc] after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-clay-light flex"
+                  className={`w-[62px] h-6 bg-${theme}-special rounded-full peer peer-focus:ring-clay peer-checked:after:translate-x-[37px] peer-checked:after:bg-${theme}-dark after:content-[''] after:absolute after:top-0.5 after:left-[2px] peer-checked:after:right-[2px] after:bg-${theme}-light after:border-[#fcc] after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-${theme}-special flex`}
                 >
                   <span
                     className={`mx-2 ${

@@ -1,13 +1,14 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import NavDesktop from '../components/NavDesktop';
+import { useSelector } from "react-redux";
 
 export const Layout = () => {
+  const theme = useSelector((state) => state.changeTheme.theme);
 
   return (
     // wraps entire page
-    <div id="wrapper" className='h-screen p-0 flex flex-col'>
-
+    <div id="wrapper" className={`h-screen p-0 flex flex-col bg-${theme}-light dark:bg-${theme}-dark text-${theme}-dark dark:text-${theme}-light`}>
       {/* <Header /> */}
       <NavDesktop />
 
