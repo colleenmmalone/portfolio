@@ -14,7 +14,7 @@ const RoutesComp = () => {
             <Route element={<Layout />}>
 
               {/* Actual Routes  */}
-              <Route path="/" element={<Home />} exact />
+              <Route path="/portfolio" element={<Home />} exact />
 
               {/* Error page for all undefined paths  */}
               <Route path="*" element={<NotFound />} />
