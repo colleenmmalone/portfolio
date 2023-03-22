@@ -23,7 +23,6 @@ code {
   @apply py-1
 }
 
-.div-scroll{
-  height: calc(100vh - 56px) !important;
-  overflow-y: scroll;
+.div-screen-height{
+  height: calc(100vh - 53px) !important;
 }

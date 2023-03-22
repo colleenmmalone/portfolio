@@ -15,7 +15,7 @@ const Nav = () => {
         <p className="text-[1.9rem] hidden lg:block flex-nowrap" >Colleen Malone</p>
       </a>
 
-      <div className="flex flex-col mx-auto my-auto ">
+      <div className="flex flex-col m-auto ">
               <label className="inline-flex relative items-center mx-auto cursor-pointer ">
                 <input
                   type="checkbox"
@@ -47,7 +47,7 @@ const Nav = () => {
 
       </div>
 
-      <div className="ml-auto flex flex-row hidden lg:block" >
+      <div className="ml-auto hidden lg:inline-flex" >
         <p className="px-1 my-auto" >
           Links
         </p >
