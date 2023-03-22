@@ -14,7 +14,7 @@ const ButtonChangeTheme = () => {
 
     return (
         <>
-            <div className='flex space-x-5 px-12'>
+            <div className='flex space-y-3 flex-col lg:flex-row lg:space-x-5 px-12'>
                 {Object.keys(Themes).map(k => {
                     const primary = `bg-${k}-special text-white`;
                     const secondary = `text-${k}-special bg-white`;
@@ -23,7 +23,7 @@ const ButtonChangeTheme = () => {
                             <button
                                 className={`border-[3px] border-${k}-special 
                                 ${theme === k ? primary : secondary} 
-                                rounded-lg px-4 py-2 my-auto`}
+                                rounded-lg px-4 py-2 my-auto mx-auto lg:mx-0`}
                                 onClick={() => {
                                     dispatch(changeTheme(k));
                                 }}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import NavDesktop from '../components/NavDesktop';
+import Nav from '../components/Nav';
 import { useSelector } from "react-redux";
 
 export const Layout = () => {
@@ -8,9 +8,9 @@ export const Layout = () => {
 
   return (
     // wraps entire page
-    <div id="wrapper" className={`h-screen p-0 flex flex-col bg-${theme}-light dark:bg-${theme}-dark text-${theme}-dark dark:text-${theme}-light`}>
+    <div id="wrapper" className={`lg:h-screen p-0 flex flex-col bg-${theme}-light dark:bg-${theme}-dark text-${theme}-dark dark:text-${theme}-light`}>
       {/* <Header /> */}
-      <NavDesktop />
+      <Nav />
 
       {/* == Main Content */}
       <div id="content-wrapper" className={`flex-1 bg-blue p-0 m-0`} >

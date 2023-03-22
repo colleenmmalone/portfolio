@@ -4,7 +4,7 @@ module.exports = {
   safelist: [
     {
       pattern: /(bg|text|border)-(bee|candy|desert|lavender|lucky|tetra)-(light|med|dark|nav|navlink|special)/,
-      variants: ['dark', 'hover', 'focus', 'peer-checked', 'after'],
+      variants: ['dark', 'hover', 'focus', 'peer-checked', 'after', 'peer-checked:after'],
     }
   ],
   theme: {
