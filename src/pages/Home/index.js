@@ -1,8 +1,7 @@
 import React from "react";
 import { ReactIcon, Figma, Github, TailwindIcon, HTML, CSS, JS, Bootstrap } from '../../img';
-import { useDispatch, useSelector } from "react-redux";
-import { changeTheme } from "../../store/slices/changeThemeSlice";
-import Button from "../../components/Button";
+import { useSelector } from "react-redux";
+import ButtonChangeTheme from "../../components/ButtonChangeTheme";
 
 
 const Home = () => {
@@ -10,8 +9,6 @@ const Home = () => {
   const imgs = [ReactIcon, HTML, CSS, JS, TailwindIcon, Figma, Github, Bootstrap];
 
   const theme = useSelector((state) => state.changeTheme.theme);
-
-  const dispatch = useDispatch();
 
   return (
     <>
@@ -24,40 +21,16 @@ const Home = () => {
               <div className="flex mt-12 w-fit flex-wrap flex-start">
                 {imgs.map((i) => (
                   <div className={`h-[60px] min-w-[60px] bg-${theme}-light m-3 p-1 rounded flex`} >
-                    <img src={i} className={` h-full m-auto`} />
+                    <img src={i} className={` h-full m-auto`} alt={`${i} icon`} />
                   </div>
                 )
                 )}
               </div>
 
 
-              <div className={`w-full bg-${theme}-med rounded-3xl mt-6 p-5`}>
-                <p className="ml-12 mt-6 text-3xl text-black" >Current Theme: {theme} </p><br />
-                <button
-                  className={`bg-${theme}-special border-2 border-${theme}-special px-5 py-2 text-white text-xl rounded-lg m-12`}
-                  onClick={() => {
-                    dispatch(changeTheme("lavender"));
-                  }}
-                >
-                  Lavender Glaze
-                </button>
-                <button
-                  className={`bg-white border-2 border-${theme}-special px-5 py-2 text-${theme}-special text-xl rounded-lg m-12`}
-                  onClick={() => {
-                    dispatch(changeTheme("candy"));
-                  }}
-                >
-                  Cotton Candy
-                </button>
-                <button
-                  className={`bg-white border-2 border-${theme}-special px-5 py-2 text-${theme}-special text-xl rounded-lg m-12`}
-                  onClick={() => {
-                    dispatch(changeTheme("bee"));
-                  }}
-                >
-                  Bee Sting
-                </button>
-                {/* <Button>Button</Button> */}
+              <div className={`w-full bg-${theme}-med rounded-3xl mt-6 py-8 px-2`}>
+                <p className="text-3xl text-black" >Current Theme</p><br />
+                <ButtonChangeTheme />
               </div>
 
             </div>
