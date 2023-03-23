@@ -34,3 +34,7 @@ code {
 .shadow{
   box-shadow: 0px -10px 50px #00000077;
 }
+
+a.active{
+  @apply: text-black;
+}
