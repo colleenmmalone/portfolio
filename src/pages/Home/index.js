@@ -45,6 +45,7 @@ const Home = () => {
           w-[34%] max-w-[670px] min-w-[470px]
           mt-0 py-12 rounded-t-[0px] 
           ${padding}
+          flex space-y-12
           `}>
             <ProjectHighlights />
           </div>
@@ -56,9 +57,10 @@ const Home = () => {
           w-full
           mt-10  py-12   rounded-t-[30px]
           px-[25px] sm:px-[8%] md:px-[15%]
-          shadow
+          shadow 
+          flex space-y-12
           `}>
-            <div className="w-full mx-auto max-w-[450px]">
+            <div className="w-full mx-auto max-w-[450px] flex flex-col space-y-12">
             <ProjectHighlights />
             </div>
           </div>
