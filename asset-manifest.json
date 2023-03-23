@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.152ada8e.css",
-    "main.js": "/portfolio/static/js/main.a646a940.js",
+    "main.css": "/portfolio/static/css/main.b1457943.css",
+    "main.js": "/portfolio/static/js/main.76f7c3f6.js",
+    "static/media/band.svg": "/portfolio/static/media/band.a8c8821a7ed5914db030fe29cffc235e.svg",
+    "static/media/gauge.png": "/portfolio/static/media/gauge.7e137d2ca5e7047c7b09.png",
     "static/media/react.png": "/portfolio/static/media/react.8a6fc0a24a800d1e0f4a.png",
     "static/media/html.png": "/portfolio/static/media/html.67aa7bcb1b1e3f94a085.png",
     "static/media/bootstrap.png": "/portfolio/static/media/bootstrap.021384b799e706cd1709.png",
@@ -10,12 +12,13 @@
     "static/media/css.png": "/portfolio/static/media/css.930d3a7987a800b2a791.png",
     "static/media/github.png": "/portfolio/static/media/github.a855c3975c028d8069f5.png",
     "static/media/figma.png": "/portfolio/static/media/figma.72fbc535ebe253a5dbc4.png",
+    "static/media/hoopla.svg": "/portfolio/static/media/hoopla.8ba791ab29ab64eff9d64c236d0dece4.svg",
     "index.html": "/portfolio/index.html",
-    "main.152ada8e.css.map": "/portfolio/static/css/main.152ada8e.css.map",
-    "main.a646a940.js.map": "/portfolio/static/js/main.a646a940.js.map"
+    "main.b1457943.css.map": "/portfolio/static/css/main.b1457943.css.map",
+    "main.76f7c3f6.js.map": "/portfolio/static/js/main.76f7c3f6.js.map"
   },
   "entrypoints": [
-    "static/css/main.152ada8e.css",
-    "static/js/main.a646a940.js"
+    "static/css/main.b1457943.css",
+    "static/js/main.76f7c3f6.js"
   ]
 }
