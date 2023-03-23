@@ -10,16 +10,23 @@ const ButtonChangeTheme = () => {
 
     return (
         <>
-            <div className='flex space-y-3 lg:space-y-0 flex-col lg:flex-row px-12'>
+            <div className='
+            
+            grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 xl:grid-cols-3 2xl:grid-cols-6 gap-1 
+            '>
                 {Object.keys(Themes).map(k => {
                     const primary = `bg-${k}-special text-white`;
                     const secondary = `text-${k}-special bg-white`;
                     return (
-                        <div key={k} className='m-auto'>
+                        <div key={k} className=' w-[160px] xl:w-[170px] h-[120px] flex px-3'>
                             <button
                                 className={`border-[3px] border-${k}-special 
                                 ${theme === k ? primary : secondary} 
-                                rounded-lg px-4 py-2 m-auto lg:mx-3`}
+                                rounded-xl  
+                                w-full 
+                                text-[20px] lg:text-[25px]
+                                px-1
+                                `}
                                 onClick={() => {
                                     dispatch(changeTheme(k));
                                 }}

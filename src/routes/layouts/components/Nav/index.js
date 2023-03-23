@@ -9,10 +9,12 @@ const Nav = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className={`bg-${theme}-nav text-white w-full m-0 px-4 lg:px-7 py-1 flex `}>
-      <a className="mr-auto my-auto" href="/">
-        <p className=" text-[1.2rem] text-right lg:hidden" >Colleen<br />Malone</p>
-        <p className="text-[1.9rem] hidden lg:block flex-nowrap" >Colleen Malone</p>
+    <div className={`bg-${theme}-nav text-white w-full m-0 py-1 flex h-auto xl:h-[53px] 
+    px-[25px] sm:px-[40px] xl:px-[55px] 3xl:px-[60px]
+    `}>
+      <a className="mr-auto my-auto p-0" href="/">
+        <p className="text-[1.2rem] text-right xl:hidden" >Colleen<br />Malone</p>
+        <p className="text-[1.9rem] hidden xl:block flex-nowrap" >Colleen Malone</p>
       </a>
 
       <div className="flex flex-col m-auto ">
@@ -41,13 +43,13 @@ const Nav = () => {
 
             </div>
 
-      <div className="flex block lg:hidden h-fit ml-auto my-auto text-2xl space-x-3">
+      <div className="flex block xl:hidden h-fit ml-auto my-auto text-2xl space-x-3">
         <i className="bx bx-menu text-3xl my-auto" />
         <i className="bx bxs-cog text-2xl my-auto" />
 
       </div>
 
-      <div className="ml-auto hidden lg:inline-flex" >
+      <div className="ml-auto hidden xl:inline-flex" >
         <p className="px-1 my-auto" >
           Links
         </p >

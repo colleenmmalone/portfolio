@@ -23,6 +23,10 @@ code {
   @apply py-1
 }
 
+.div-full-height{
+  height: auto;
+}
+
 .div-screen-height{
   height: calc(100vh - 53px) !important;
 }

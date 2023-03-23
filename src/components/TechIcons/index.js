@@ -11,7 +11,7 @@ const TechIcons = () => {
 
     return (
         <>
-        {/* <div className="flex lg:mt-12 w-fit flex-wrap flex-start">
+        {/* <div className="flex xl:mt-12 w-fit flex-wrap flex-start">
         {imgs.map((i) => (
           <div className={`h-[60px] min-w-[60px] bg-${theme}-light m-3 p-1 rounded flex`} >
             <img src={i} className={` h-full m-auto`} alt={`${i} icon`} />
@@ -19,8 +19,8 @@ const TechIcons = () => {
         )
         )}
         </div> */}
-
-<div className="flex lg:mt-12 w-fit flex-wrap flex-start mx-auto text-white">
+<div className='w-full flex'>
+<div className="mx-auto grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 xl:grid-cols-8  gap-2  mx-auto">
         {icons.map((i) => (
           <div className={`text-[60px] m-3 p-1 w-[65px] flex`} >
             {i}
@@ -28,6 +28,7 @@ const TechIcons = () => {
         )
         )}
 
+      </div>
       </div>
       </>
     );

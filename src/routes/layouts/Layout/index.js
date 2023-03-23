@@ -8,9 +8,11 @@ export const Layout = () => {
 
   return (
     // wraps entire page
-    <div id="wrapper" className={` p-0 flex flex-col bg-${theme}-light dark:bg-${theme}-dark text-${theme}-dark dark:text-${theme}-light`}>
-      {/* <Header /> */}
-      {/* lg:h-screen lg:overflow-hidden */}
+    <div id="wrapper"
+      className={` p-0 flex flex-col 
+        bg-${theme}-light dark:bg-${theme}-dark text-${theme}-dark dark:text-${theme}-light
+      `}
+    >
       <Nav />
 
       {/* == Main Content */}

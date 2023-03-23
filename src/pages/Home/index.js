@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import ButtonChangeTheme from "../../components/ButtonChangeTheme";
-import ButtonProjectName from "../../components/ButtonProjectName";
+import ProjectHighlights from "../../components/ProjectHighlights";
 import TechIcons from "../../components/TechIcons";
 
 
@@ -10,38 +10,56 @@ const Home = () => {
 
   const theme = useSelector((state) => state.changeTheme.theme);
 
+  const padding = "px-[25px] sm:px-[40px] xl:px-[55px] 3xl:px-[60px] ";
+
   return (
     <>
-      <div className="h-full flex-1">
-        <div className="grid grid-cols-1 lg:grid-cols-12 div-screen-height">
-          <div className={`lg:col-span-8 lg:div-screen-height flex flex-col px-3 pb-8 lg:px-7 lg:pb-0`}>
-            <div className="my-auto">
+    
+      <div className="h-auto xl:div-screen-height ">
+        <div className=" flex flex-col xl:flex-row">
 
-              <h1 className={`text-[55px] lg:text-[82px] text-${theme}-special pt-10 lg:pt-0`}> Hi! I’m Colleen.</h1>
-              <h3 className={`text-[30px] lg:text-[62px] lg:leading-[75px] my-7 `} >I identify as a full-stack web developer, but I am learning UX Visual Design in Figma.</h3>
+          <div className={`h-auto xl:div-screen-height w-full flex `}>
+            <div className={`${padding} space-y-4 my-6 xl:my-auto`} >
+              <h1 className={`text-[55px] sm:text-[72px] md:text-[90px] text-${theme}-special `}> 
+              Hi! I’m Colleen.
+              </h1>
+              <h3 className={`text-[33px] sm:text-[52px] md:text-[70px] lg:text-[82px] 2xl:text-[95px] xl:leading-[90px] `} >
+                I identify as a full-stack web developer, but I am learning UX Visual Design in Figma.
+                </h3>
               <TechIcons />
-
-              <div className={`w-fit mx-auto bg-${theme}-med rounded-3xl mt-6 py-8 px-2`}>
+              
+              <div className={`w-full mx-auto bg-${theme}-med rounded-3xl py-8 flex flex-col`}>
                 <p className="text-3xl text-black text-center" >Current Theme</p><br />
+                <div className=" mx-auto">
                 <ButtonChangeTheme />
+                </div>
               </div>
-
-            </div>
+              </div>
           </div>
 
-          <div className={` 
-          lg:col-span-4 
+          {/* Desktop panel  */}
+          <div className={`
+          hidden xl:block 
+          div-screen-height overflow-y-scroll
           bg-${theme}-med text-${theme}-dark 
-          p-default lg:px-12 lg:py-12 rounded-t-[30px] lg:rounded-t-[0px] 
-          h-full overflow-y-scroll 
+          w-[34%] max-w-[670px] min-w-[470px]
+          mt-0 py-12 rounded-t-[0px] 
+          ${padding}
           `}>
-            <h1 className={`text-3xl text-center fw-bold text-${theme}-special`}>Project Highlights</h1>
-            <div className="w-full  h-[400px] bg-[#888] mx-auto my-12"></div>
-            <ButtonProjectName />
-            <div className="w-full l h-[400px] bg-[#888] mx-auto my-12"></div>
-            <ButtonProjectName figma />
-            <div className="w-full  h-[400px] bg-[#888] mx-auto my-12"></div>
-            <ButtonProjectName className="mb-6" />
+            <ProjectHighlights />
+          </div>
+
+          {/* Mobile panel  */}
+          <div className={` 
+          block xl:hidden
+          bg-${theme}-med text-${theme}-dark 
+          w-full
+          mt-10  py-12   rounded-t-[30px]
+          px-[25px] sm:px-[8%] md:px-[15%]
+          `}>
+            <div className="w-full mx-auto max-w-[450px]">
+            <ProjectHighlights />
+            </div>
           </div>
 
         </div>
