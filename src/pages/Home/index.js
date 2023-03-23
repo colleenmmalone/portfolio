@@ -56,6 +56,7 @@ const Home = () => {
           w-full
           mt-10  py-12   rounded-t-[30px]
           px-[25px] sm:px-[8%] md:px-[15%]
+          shadow
           `}>
             <div className="w-full mx-auto max-w-[450px]">
             <ProjectHighlights />
