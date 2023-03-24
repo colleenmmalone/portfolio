@@ -27,6 +27,7 @@ const ProjectHighlights = () => {
             </div>
             <ButtonProjectName label={"Band Website"} figma
                 to="https://www.figma.com/proto/lkbPnwl2TOMaTFeqXHvPTg/Inspo-Board?page-id=0%3A1&node-id=1-2&viewport=895%2C702%2C0.59&scaling=scale-down&starting-point-node-id=1%3A2&show-proto-sidebar=1"
+                target="_blank" rel="noopener noreferrer"
             />
 
             <div className="w-full h-fit bg-black mx-auto ">
@@ -37,8 +38,9 @@ const ProjectHighlights = () => {
                     <img src={Hoopla} className="w-full" alt="band thumbnail" />
                 </Link>
             </div>
-            <ButtonProjectName label={"Hoopla: Sleep Noise App"} figma
+            <ButtonProjectName label={"Hoopla"} sublabel={"Sleep Noise App"} figma
                 to="https://www.figma.com/proto/lkbPnwl2TOMaTFeqXHvPTg/Inspo-Board?page-id=213%3A195&node-id=213-298&viewport=3469%2C-590%2C1.1&scaling=scale-down&starting-point-node-id=213%3A298"
+
             />
 
             <div className="w-full h-fit bg-black mx-auto ">
@@ -51,6 +53,7 @@ const ProjectHighlights = () => {
             </div>
             <ButtonProjectName label={"Knit Gauge Calculator"}
                 to="https://stitchineer.github.io/knit-gauge-calculator/"
+
             />
 
 
