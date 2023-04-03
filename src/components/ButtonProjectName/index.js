@@ -8,7 +8,7 @@ const ButtonProjectName = ({ label="Project Name", sublabel='', figma=false, cla
     const theme = useSelector((state) => state.changeTheme.theme);
 
     return (
-        <div>
+        <div className='animate-slide'>
         <Link to={to} target="_blank" rel="noopener noreferrer">
         <button className={` bg-${theme}-special flex rounded-lg p-0 w-full rounded-[16px] overflow-hidden ${className}`} >
             <div className={` bg-${theme}-light w-[35%] rounded-r-full px-6 py-4 flex`}>

@@ -12,7 +12,7 @@ const ProjectHighlights = () => {
     return (
         <>
             <h1
-                className={`text-3xl sm:text-[40px] md:text-[45px] lg:text-[50px] xl:text-[40px] 3xl:text-[45px] text-center font-medium text-${theme}-special`}>
+                className={`text-3xl sm:text-[40px] md:text-[45px] lg:text-[50px] xl:text-[40px] 3xl:text-[45px] text-center font-medium text-${theme}-nav`}>
                 Project Highlights
             </h1>
 

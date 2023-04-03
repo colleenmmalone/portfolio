@@ -1,43 +1,37 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import ButtonChangeTheme from "../../components/ButtonChangeTheme";
 import ProjectHighlights from "../../components/ProjectHighlights";
 import TechIcons from "../../components/TechIcons";
 
-
 const Home = () => {
 
-
   const theme = useSelector((state) => state.changeTheme.theme);
-
   const padding = "px-[25px] sm:px-[40px] xl:px-[55px] 3xl:px-[60px] ";
 
   return (
     <>
-    
+
       <div className="h-auto xl:div-screen-height ">
         <div className=" flex flex-col xl:flex-row">
 
           <div className={`h-auto xl:div-screen-height w-full flex `}>
-            <div className={`${padding} space-y-4 my-6 xl:my-auto`} >
-              <h1 className={`text-[55px] sm:text-[72px] md:text-[90px] text-${theme}-special `}> 
-              Hi! I’m Colleen.
+            <div className={`${padding} space-y-12 my-6 xl:my-auto`} >
+              <h1 className={`text-[55px] sm:text-[72px] md:text-[90px] text-${theme}-special `}>
+                Hi! I’m Colleen.
               </h1>
-              <h3 className={`text-[33px] sm:text-[52px] md:text-[70px] lg:text-[82px] 2xl:text-[95px] xl:leading-[90px] `} >
+              <h3 className={`pb-10 text-[33px] sm:text-[52px] md:text-[70px] lg:text-[82px] 2xl:text-[95px] xl:leading-[90px] `} >
                 I identify as a full-stack web developer, but I am learning UX Visual Design in Figma.
-                </h3>
-              <TechIcons />
-              
-              <div className={`w-full mx-auto bg-${theme}-med rounded-3xl py-8 flex flex-col`}>
-                <p className="text-3xl text-black text-center" >Current Theme</p><br />
-                <div className=" mx-auto">
-                <ButtonChangeTheme />
+              </h3>
+
+              <div className={`mx-auto w-fit rounded-lg bg-gradient-to-r from-${theme}-light via-${theme}-special to-${theme}-nav p-1`}>
+                <div className={`bg-${theme}-dark m-0 p-3 rounded-lg`}>
+                  <TechIcons />
                 </div>
               </div>
-              </div>
+            </div>
           </div>
 
-          {/* Desktop panel  */}
+        {/* || °.°.° DESKTOP PANEL °.°.° ||  */}
           <div className={`
           hidden xl:block 
           div-screen-height overflow-y-scroll
@@ -50,7 +44,7 @@ const Home = () => {
             <ProjectHighlights />
           </div>
 
-          {/* Mobile panel  */}
+        {/* || °.°.° MOBILE PANEL °.°.° ||  */}
           <div className={` 
           block xl:hidden
           bg-${theme}-med text-${theme}-dark 
@@ -61,7 +55,7 @@ const Home = () => {
           flex space-y-12
           `}>
             <div className="w-full mx-auto max-w-[450px] flex flex-col space-y-12">
-            <ProjectHighlights />
+              <ProjectHighlights />
             </div>
           </div>
 

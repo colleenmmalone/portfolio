@@ -31,15 +31,15 @@ const Nav = () => {
         <div className="flex h-fit ml-auto my-auto text-2xl space-x-9">
           <div className="hidden xl:inline-flex  space-x-9">
 
-            <NavLink to="/portfolio/" className={({ isActive }) => isActive ? linkActive : ""} exact>
+            <NavLink to="/portfolio" className={({ isActive }) => isActive ? linkActive : `hover:text-${theme}-med`} >
               <p className="">Home</p>
             </NavLink>
 
-            <NavLink to="/portfolio/gallery" className={({ isActive }) => isActive ? linkActive : ""}>
+            <NavLink to="/gallery" className={({ isActive }) => isActive ? linkActive : `hover:text-${theme}-med`}>
               <p className="">Gallery</p>
             </NavLink>
 
-            <NavLink to="/portfolio/about" className={({ isActive }) => isActive ? linkActive : ""}>
+            <NavLink to="/about" className={({ isActive }) => isActive ? linkActive : `hover:text-${theme}-med`}>
               <p className="">About</p>
             </NavLink>
 
@@ -47,7 +47,7 @@ const Nav = () => {
           </div>
           <i className="bx bx-menu text-3xl my-auto xl:hidden" />
 
-          <NavLink to="/portfolio/settings" className={({ isActive }) => isActive ? linkActive : ""}>
+          <NavLink to="/settings" className={({ isActive }) => isActive ? linkActive : `hover:text-${theme}-med`}>
             <p className="flex space-x-2">
               <i className="bx bxs-cog text-2xl my-auto" exact />
             </p>

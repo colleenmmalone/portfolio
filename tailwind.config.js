@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   safelist: [
     {
-      pattern: /(bg|text|border)-(bee|candy|desert|lavender|lucky|tetra)-(light|med|dark|nav|navlink|special)/,
+      pattern: /(bg|text|border|from|via|to)-(bee|candy|desert|lavender|lucky|tetra)-(light|med|dark|nav|navlink|special)/,
       variants: ['dark', 'hover', 'active', 'focus', 'peer-checked', 'after', 'peer-checked:after'],
     }
   ],
@@ -58,7 +58,18 @@ module.exports = {
           navlink: "#1E00D7",
           special: "#5F00BA"    
         },
-      }
+      },
+      animation: {
+        'slide': 'slide 3s ease-out',
+      },
+      keyframes: {
+        slide: {
+          
+          '0%': { transform: 'translateX(-100vw)' },
+          '100%': { transform: 'translateX(0)' },
+        }
+      },
+
     },
   },
   variants: {},
