@@ -10,7 +10,7 @@ const ButtonProjectName = ({ label = "Project Name", figma = false, className = 
     return (
         <div className='animate-slide'>
             <Link to={to} target="_blank" rel="noopener noreferrer">
-                <button className={` bg-${theme}-special flex p-0 w-full rounded-[16px] overflow-hidden ${className} shadow-sm`} >
+                <button className={` bg-${theme}-special flex p-0 w-full rounded-[16px] overflow-hidden ${className} shadow-sm hover:shadow-lg`} >
 
                     <div className={` bg-${theme}-light w-[35%] h-full rounded-r-full px-6 py-4 flex`}>
                         <img src={figma ? Figma : ReactIcon} className={` `} alt={`${figma ? 'Figma' : 'React'} icon `} />

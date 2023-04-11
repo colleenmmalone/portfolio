@@ -29,7 +29,7 @@ const ProjectHighlights = () => {
                                     target="_blank" rel="noopener noreferrer"
                                     className="my-5"
                                 >
-                                    <img src={p.img} className="w-full" alt={p.alt} />
+                                    <img src={p.img} className="w-full opacity-80 hover:opacity-100" alt={p.alt} />
                                 </Link>
                             </div>
                             <ButtonProjectName label={p.title} figma={p.isFigma}

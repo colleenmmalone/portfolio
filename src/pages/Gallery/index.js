@@ -21,7 +21,7 @@ const Gallery = () => {
         <hr className={`border-${theme}-special border-[1.5px] rounded mb-8`} />
         <hr className={`border-${theme}-special border-[1.5px] rounded`} />
 
-        <div className="grid grid-cols-2 mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 mx-auto">
 
           {Projects.map((p, i) => {
 
