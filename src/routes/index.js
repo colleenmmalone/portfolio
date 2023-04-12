@@ -7,6 +7,7 @@ import NotFound from "../pages/NotFound";
 import Settings from "../pages/Settings";
 import Gallery from "../pages/Gallery";
 import AnimationPractice from "../pages/AnimationPractice";
+import AboutMe from "../pages/AboutMe";
 
 
 const RoutesComp = () => {
@@ -20,6 +21,7 @@ const RoutesComp = () => {
               <Route path="/portfolio" element={<Home />} exact />
               <Route path="/settings" element={<Settings />} exact />
               <Route path="/gallery" element={<Gallery />} exact />
+              <Route path="/about" element={<AboutMe />} exact />
               <Route path="/animations" element={<AnimationPractice />} exact />
 
               {/* Error page for all undefined paths  */}

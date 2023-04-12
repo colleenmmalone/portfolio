@@ -2,13 +2,14 @@ import React, { useState, useRef } from "react";
 import { useSelector } from "react-redux";
 import { Link, NavLink } from "react-router-dom";
 import { useClickAway } from "use-click-away";
+import { NavLinks } from "../NavLinks";
 
 
 const Nav = () => {
 
   const theme = useSelector((state) => state.changeTheme.theme);
 
-  const linkActive = `text-${theme}-special font-bold`;
+  const linkActive = `text-${theme}-special font-bold my-auto`;
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -17,13 +18,6 @@ const Nav = () => {
   useClickAway(clickRef, () => {
     setIsOpen(false)
   })
-
-  // useClickAway({
-  //   isOpen,
-  //   setIsOpen,
-  //   reactAppId: "portfolio",
-  //   clickable: ["hamburger"]
-  // })
 
   return (
     <>
@@ -50,59 +44,48 @@ const Nav = () => {
         <div className="flex h-fit ml-auto my-auto text-[1.05rem] lg:text-[1.2rem] space-x-9">
           <div className="hidden sm:inline-flex space-x-9 my-auto">
 
-            <NavLink to="/portfolio" className={({ isActive }) => isActive ? linkActive : `hover:text-${theme}-med`} >
-              <p className="">Home</p>
-            </NavLink>
+            {NavLinks.map((n, i) => {
 
-            <NavLink to="/gallery" className={({ isActive }) => isActive ? linkActive : `hover:text-${theme}-med`}>
-              <p className="">Gallery</p>
-            </NavLink>
+              return (
 
-            <NavLink to="/about" className={({ isActive }) => isActive ? linkActive : `hover:text-${theme}-med`}>
-              <p className="">About</p>
-            </NavLink>
-
+                <NavLink to={n.to} className={({ isActive }) => isActive ? linkActive : `hover:text-${theme}-med`} key={`nav${i}`}>
+                  <p className="">{n.label}</p>
+                </NavLink>
+              )
+            })}
 
           </div>
-          <div className="flex space-x-3">
+          <div className="flex space-x-3 content-center">
             <button onClick={() => setIsOpen(!isOpen)} >
               <i className="bx bx-menu text-3xl my-auto ml-auto sm:hidden" />
             </button>
 
-            <NavLink to="/settings" className={({ isActive }) => isActive ? linkActive : `hover:text-${theme}-med`}>
+            <NavLink to="/settings" className={({ isActive }) => isActive ? linkActive : `hover:text-${theme}-med my-auto`}>
               <p className="flex">
                 <i className="bx bxs-cog text-2xl my-auto" exact />
               </p>
             </NavLink>
+
           </div>
-
-
         </div>
-
       </div>
 
-      <div className={` ${isOpen ? 'visible' : 'hidden'} absolute top-[50px] right-[25px] min-w-[200px] z-20 bg-${theme}-light dark:bg-${theme}-dark border-2 border-${theme}-light rounded-lg p-2 pb-4 text-[18px] flex flex-col space-y-2`} id="hamburger" ref={clickRef}>
-        
-        <button onClick={()=>{setIsOpen(false)}} className="ml-auto mr-2 text-2xl"><i className="bx bx-x" /></button>
-        <Link to="/portfolio"  >
-          <div className={`hover:bg-${theme}-special hover:text-white px-2 py-1`} onClick={()=>setIsOpen(false)}>
-          <p className="">Home</p>
-          </div>
-        </Link>
+      <div className={` ${isOpen ? 'visible' : 'hidden'} absolute top-[50px] right-[25px] min-w-[200px] z-20 bg-${theme}-light dark:bg-${theme}-dark border-2 border-${theme}-dark dark:border-${theme}-light rounded-lg p-2 pb-4 text-[18px] flex flex-col space-y-2`} id="hamburger" ref={clickRef}>
 
-        <Link to="/gallery" className={({ isActive }) => isActive ? linkActive : `hover:text-${theme}-med`}>
-         
-        <div className={`hover:bg-${theme}-special hover:text-white px-2 py-1`} onClick={()=>setIsOpen(false)}>
-          <p className="">Gallery</p>
-          </div>
-        </Link>
+        <button onClick={() => { setIsOpen(false) }} className={`ml-auto mr-2 text-2xl hover:text-${theme}-special`}><i className="bx bx-x" /></button>
 
-        <Link to="/about" className={({ isActive }) => isActive ? linkActive : `hover:text-${theme}-med`}>
-         
-        <div className={`hover:bg-${theme}-special hover:text-white px-2 py-1`} onClick={()=>setIsOpen(false)}>
-          <p className="">About</p>
-          </div>
-        </Link>
+        {NavLinks.map((n, i) => {
+
+          return (
+
+            <Link to={n.to} key={`mobile${i}`} >
+            <div className={`hover:bg-${theme}-special hover:text-white px-2 py-1`} onClick={() => setIsOpen(false)}>
+              <p className="">{n.label}</p>
+            </div>
+          </Link>
+          )
+        })}
+
       </div>
     </>
   )

@@ -23,8 +23,8 @@ const Home = () => {
                 I identify as a full-stack web developer, but I am learning UX Visual Design in Figma.
               </h3>
 
-              <div className={`mx-auto w-fit rounded-lg bg-gradient-to-r from-${theme}-light via-${theme}-special to-${theme}-nav p-1`}>
-                <div className={`bg-${theme}-dark m-0 p-3 rounded-lg opacity-90`}>
+              <div className={`mx-auto w-fit rounded-lg bg-gradient-to-r from-${theme}-dark dark:from-${theme}-light via-${theme}-special dark:via-${theme}-special to-${theme}-nav dark:to-${theme}-nav p-1`}>
+                <div className={`bg-${theme}-light dark:bg-${theme}-dark m-0 p-3 rounded-lg opacity-90`}>
                   <TechIcons />
                 </div>
               </div>

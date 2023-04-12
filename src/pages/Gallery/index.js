@@ -37,7 +37,7 @@ const Gallery = () => {
                       to={p.to}
                       target="_blank" rel="noopener noreferrer"
                     >
-                      <img src={p.img} alt={p.alt} />
+                      <img src={p.img} alt={p.alt} className="w-full" />
                     </Link>
                   </div>
 
