@@ -23,7 +23,7 @@ const ProjectHighlights = () => {
                 if (i < 3) {
                     return (
                         <>
-                            <div className={`w-full h-fit mx-auto ${p.bg} `}>
+                            <div className={`w-full h-fit mx-auto ${p.bg} `} key={`highlight${i}`}>
                                 <Link
                                     to={p.to}
                                     target="_blank" rel="noopener noreferrer"

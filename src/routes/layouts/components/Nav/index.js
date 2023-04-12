@@ -1,13 +1,29 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import { useSelector } from "react-redux";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { useClickAway } from "use-click-away";
 
 
 const Nav = () => {
- 
+
   const theme = useSelector((state) => state.changeTheme.theme);
 
   const linkActive = `text-${theme}-special font-bold`;
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const clickRef = useRef("");
+
+  useClickAway(clickRef, () => {
+    setIsOpen(false)
+  })
+
+  // useClickAway({
+  //   isOpen,
+  //   setIsOpen,
+  //   reactAppId: "portfolio",
+  //   clickable: ["hamburger"]
+  // })
 
   return (
     <>
@@ -24,7 +40,7 @@ const Nav = () => {
           <div className="mr-auto my-auto p-0" >
             <p className="text-[1.2rem] sm:text-[1.6rem] lg:text-[2rem] flex-nowrap my-auto" >
               Colleen Malone
-              </p>
+            </p>
           </div>
         </NavLink>
 
@@ -48,17 +64,45 @@ const Nav = () => {
 
 
           </div>
-          <i className="bx bx-menu text-3xl my-auto sm:hidden" />
+          <div className="flex space-x-3">
+            <button onClick={() => setIsOpen(!isOpen)} >
+              <i className="bx bx-menu text-3xl my-auto ml-auto sm:hidden" />
+            </button>
 
-          <NavLink to="/settings" className={({ isActive }) => isActive ? linkActive : `hover:text-${theme}-med`}>
-            <p className="flex space-x-2">
-              <i className="bx bxs-cog text-2xl my-auto" exact />
-            </p>
-          </NavLink>
+            <NavLink to="/settings" className={({ isActive }) => isActive ? linkActive : `hover:text-${theme}-med`}>
+              <p className="flex">
+                <i className="bx bxs-cog text-2xl my-auto" exact />
+              </p>
+            </NavLink>
+          </div>
 
 
         </div>
 
+      </div>
+
+      <div className={` ${isOpen ? 'visible' : 'hidden'} absolute top-[50px] right-[25px] min-w-[200px] z-20 bg-${theme}-light dark:bg-${theme}-dark border-2 border-${theme}-light rounded-lg p-2 pb-4 text-[18px] flex flex-col space-y-2`} id="hamburger" ref={clickRef}>
+        
+        <button onClick={()=>{setIsOpen(false)}} className="ml-auto mr-2 text-2xl"><i className="bx bx-x" /></button>
+        <Link to="/portfolio"  >
+          <div className={`hover:bg-${theme}-special hover:text-white px-2 py-1`} onClick={()=>setIsOpen(false)}>
+          <p className="">Home</p>
+          </div>
+        </Link>
+
+        <Link to="/gallery" className={({ isActive }) => isActive ? linkActive : `hover:text-${theme}-med`}>
+         
+        <div className={`hover:bg-${theme}-special hover:text-white px-2 py-1`} onClick={()=>setIsOpen(false)}>
+          <p className="">Gallery</p>
+          </div>
+        </Link>
+
+        <Link to="/about" className={({ isActive }) => isActive ? linkActive : `hover:text-${theme}-med`}>
+         
+        <div className={`hover:bg-${theme}-special hover:text-white px-2 py-1`} onClick={()=>setIsOpen(false)}>
+          <p className="">About</p>
+          </div>
+        </Link>
       </div>
     </>
   )

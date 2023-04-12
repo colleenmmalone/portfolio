@@ -10,8 +10,8 @@ const TechIcons = () => {
     <>
       <div className='w-full flex'>
         <div className="mx-auto grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8  gap-2 mx-auto">
-          {icons.map((i) => (
-            <div className={`text-[60px] m-3 p-1 w-[65px] flex`} >
+          {icons.map((i,d) => (
+            <div className={`text-[60px] m-3 p-1 w-[65px] flex`} key={`icon${d}`} >
               {i}
             </div>
           )

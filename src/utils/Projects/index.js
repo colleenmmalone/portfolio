@@ -57,7 +57,7 @@ const Projects = [
         bg: "bg-white",
         isFigma: true,
         paragraphs: [
-            "This was my first foray into Figma as a designer as opposed to a developer. Obviously, my design abilities have vastly improved since then, but I still enjoy this for the fun little app that it is.",
+            "This was my first foray into Figma as a designer as opposed to as a developer. Obviously, my design abilities have vastly improved since then, but I still enjoy this for the fun little app that it is.",
         ]
     },
     {
