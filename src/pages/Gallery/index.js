@@ -26,7 +26,7 @@ const Gallery = () => {
 
             return (
               <>
-                <div className={`grid grid-cols-1 sm:grid-cols-2 gap-8 bg-${theme}-med rounded-[8px] shadow-sm px-6 py-7 `} key={`project${i}`}>
+                <div className={`grid grid-cols-1 sm:grid-cols-2 gap-8 bg-${theme}-med rounded-[8px] shadow-sm px-6 py-7 max-w-[550px] mx-auto`} key={`project${i}`}>
                   <div className="m-0 p-0 w-full block sm:hidden max-w-[350px] mx-auto">
                     <h1 className={`text-center text-3xl text-${theme}-dark font-inter`} >{p.title}</h1>
                     <hr className={`border-${theme}-special border-[1px] rounded`} />
@@ -37,14 +37,19 @@ const Gallery = () => {
                       to={p.to}
                       target="_blank" rel="noopener noreferrer"
                     >
-                      <img src={p.img} alt={p.alt} className="w-full" />
+                      <img src={p.img} alt={p.alt} className="w-full opacity-80 hover:opacity-100" />
                     </Link>
                   </div>
 
                   <div className="w-full max-w-[350px] mx-auto" >
 
                     <div className="m-0 p-0 w-full hidden sm:block">
-                      <h1 className={`text-center text-2xl text-${theme}-dark font-inter`} >{p.title}</h1>
+                    <Link
+                      to={p.to}
+                      target="_blank" rel="noopener noreferrer"
+                    >
+                      <h1 className={`text-center text-2xl text-${theme}-dark font-inter hover:text-${theme}-special`} >{p.title}</h1>
+                      </Link>
                       <hr className={`border-${theme}-special border-[1px] mb-3 rounded`} />
                     </div>
 
