@@ -41,17 +41,17 @@ const Gallery = () => {
                     </Link>
                   </div>
 
-                  <div className="max-w-[350px] mx-auto" >
+                  <div className="w-full max-w-[350px] mx-auto" >
 
                     <div className="m-0 p-0 w-full hidden sm:block">
-                      <h1 className={`text-center text-3xl text-${theme}-dark font-inter`} >{p.title}</h1>
+                      <h1 className={`text-center text-2xl text-${theme}-dark font-inter`} >{p.title}</h1>
                       <hr className={`border-${theme}-special border-[1px] mb-3 rounded`} />
                     </div>
 
                     <div className="space-y-3 ">
                       {p.paragraphs?.map((t, d) => {
                         return (
-                          <p className={` text-${theme}-dark `} key={`paragraph${i}-${d}`}>{t}</p>
+                          <p className={` text-${theme}-dark text-[14px] `} key={`paragraph${i}-${d}`}>{t}</p>
                         )
                       })}
                     </div>

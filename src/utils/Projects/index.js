@@ -44,9 +44,7 @@ const Projects = [
         bg: "bg-black px-12",
         isFigma: true,
         paragraphs: [
-            "paragraph 1",
-            "paragraph 1",
-            "paragraph 1",
+            "I designed this site with my musician friend in mind. I wanted a page that highlighted all the important things for a musician: music, merch, shows, booking. Many times I'll go to a local band's webiste and struggle to find these things.",
         ]
     },
     {
@@ -58,6 +56,7 @@ const Projects = [
         isFigma: true,
         paragraphs: [
             "This was my first foray into Figma as a designer as opposed to as a developer. Obviously, my design abilities have vastly improved since then, but I still enjoy this for the fun little app that it is.",
+            "I made this while following Pierluigi Giglio's class on Udemy."
         ]
     },
     {
@@ -78,7 +77,10 @@ const Projects = [
         img: Imgs.Gauge,
         alt: "knitting gauge calculator thumbnail",
         bg: "bg-white",
-        isFigma: false
+        isFigma: false,
+        paragraphs: [
+            "This is a calculator that will help you determine that gague required for a knitting (or crochet) project. This is helpful for when you end up using a different weight yarn or size needles than what the pattern calls for.",
+        ]
     },
     {
         title: "Simple Interest",
@@ -86,7 +88,10 @@ const Projects = [
         img: Imgs.Interest,
         alt: "simple interest calculator thumbnail",
         bg: "bg-black p-2",
-        isFigma: false
+        isFigma: false,
+        paragraphs: [
+            "One of my earliest coding projects. Calculates the amount of interest a deposit can earn over some length of time. ",
+        ]
     }
 ];
 
