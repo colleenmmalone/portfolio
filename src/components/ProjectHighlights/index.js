@@ -47,7 +47,7 @@ const ProjectHighlights = () => {
 
 
 <Link
-                                    to={'/gallery'}
+                                    to='/gallery'
                                     target="_blank" rel="noopener noreferrer"
                                     className="my-5 mx-auto"
                                 >
