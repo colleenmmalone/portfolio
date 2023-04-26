@@ -9,6 +9,6 @@ export const NavLinks = [
     },
     {
         to: "/about",
-        label: "About"
+        label: "About Me"
     },
 ]

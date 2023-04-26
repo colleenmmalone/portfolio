@@ -41,14 +41,14 @@ const ButtonProjectName = ({ label = "Project Name", figma = false, className = 
             // }}
         >
             <Link to={to} target="_blank" rel="noopener noreferrer">
-                <button className={` bg-${theme}-special flex p-0 w-full rounded-[16px] overflow-hidden ${className} shadow-sm hover:shadow-lg`} >
+                <button className={` bg-${theme}-special flex p-0 w-full rounded-[16px] h-[4rem] overflow-hidden ${className} shadow-sm hover:bg-${theme}-nav`} >
 
-                    <div className={` bg-${theme}-light w-[35%] h-full rounded-r-full px-6 py-4 flex`}>
-                        <img src={figma ? Figma : ReactIcon} className={` `} alt={`${figma ? 'Figma' : 'React'} icon `} />
+                    <div className={` bg-${theme}-light w-[25%] h-full rounded-r-full p-3 flex`}>
+                        <img src={figma ? Figma : ReactIcon} className={`mx-auto h-full`} alt={`${figma ? 'Figma' : 'React'} icon  `} />
                     </div>
 
                     <div className='my-auto'>
-                        <p className={`my-auto w-full pl-4 text-left text-[1.8rem] md:text-3xl text-white font-inter leading-7`} >{label}</p>
+                        <p className={`my-auto w-full pl-4 text-left text-[1.4rem] md:text-xl text-white font-inter leading-7`} >{label}</p>
                     </div>
 
                 </button>

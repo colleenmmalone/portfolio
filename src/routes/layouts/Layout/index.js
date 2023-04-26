@@ -9,14 +9,14 @@ export const Layout = () => {
   return (
     // wraps entire page
     <div id="wrapper"
-      className={` p-0 flex flex-col 
+      className={` p-0 flex flex-col min-h-[100vh]
         bg-${theme}-light dark:bg-${theme}-dark text-${theme}-dark dark:text-${theme}-light
       `}
     >
       <Nav />
 
       {/* == Main Content */}
-      <div id="content-wrapper" className={`flex-1 bg-blue p-0 m-0`} >
+      <div id="content-wrapper" className={`flex p-0 m-0 grow`} >
 
         <Outlet />
 

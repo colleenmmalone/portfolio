@@ -11,7 +11,7 @@ const Gallery = () => {
 
   return (
     <>
-      <div className={`min-h-[100vh] ${padding}`}>
+      <div className={`min-h-[100vh] mx-auto ${padding}`}>
         <h1 className={`text-[55px] sm:text-[72px] md:text-[90px] text-${theme}-special `}>
           Gallery
         </h1>

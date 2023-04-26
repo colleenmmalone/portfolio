@@ -16,3 +16,6 @@ export { default as Poke } from './thumbnails/poke.png';
 export { default as Interest } from './thumbnails/interest.png';
 export { default as Supreme } from './thumbnails/supreme.png';
 export { default as Dee } from './thumbnails/dee.png';
+
+
+export { default as Video } from './video/video.mp4';

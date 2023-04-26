@@ -50,9 +50,9 @@ const Home = () => {
           <div className={` 
           block xl:hidden
           bg-${theme}-med text-${theme}-dark 
-          w-full
-          mt-10  py-12 rounded-t-[30px]
-          px-[45px] sm:px-[8%] md:px-[15%]
+          w-full max-w-[500px]
+          mt-10 mx-auto py-12 rounded-t-[30px]
+          px-9
           shadow 
           flex space-y-12
           `}>

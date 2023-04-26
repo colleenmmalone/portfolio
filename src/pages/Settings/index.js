@@ -13,7 +13,7 @@ const Settings = () => {
 
   return (
     <>
-      <div className="div-screen-height space-y-7 p-7">
+      <div className="div-screen-height space-y-7 p-7 mx-auto">
 
         {/* || °.°.° LIGHT / DARK TOGGLE °.°.° ||  */}
         <div className="flex flex-col m-auto ">
