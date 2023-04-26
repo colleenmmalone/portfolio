@@ -47,8 +47,7 @@ const ProjectHighlights = () => {
 
 
 <Link
-                                    to='/gallery'
-                                    target="_blank" rel="noopener noreferrer"
+                                    to="/gallery"
                                     className="my-5 mx-auto"
                                 >
 Find more in my <span className={` text-${theme}-special hover:text-${theme}-nav `}> Gallery</span>
