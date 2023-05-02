@@ -18,11 +18,11 @@ const RoutesComp = () => {
             <Route element={<Layout />}>
 
               {/* Actual Routes  */}
-              <Route path="/portfolio" element={<Home />} exact />
-              <Route path="/settings" element={<Settings />} exact />
-              <Route path="/gallery" element={<Gallery />} exact />
-              <Route path="/about" element={<AboutMe />} exact />
-              <Route path="/animations" element={<AnimationPractice />} exact />
+              <Route path="/portfolio" element={<Home />}  />
+              <Route path="/settings" element={<Settings />}  />
+              <Route path="/gallery" element={<Gallery />}  />
+              <Route path="/about" element={<AboutMe />}  />
+              <Route path="/animations" element={<AnimationPractice />}  />
 
               {/* Error page for all undefined paths  */}
               <Route path="*" element={<NotFound />} />

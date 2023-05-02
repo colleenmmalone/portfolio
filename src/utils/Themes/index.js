@@ -2,7 +2,7 @@ const Themes = {
     "bee": "Bee Sting",
     "candy": "Cotton Candy",
     "desert": "Desert Sunset",
-    "lavender": "Lavender",
+    "lavender": "Lavender Glaze",
     "lucky": "Lucky",
     "tetra": "Neon Tetra"
 }

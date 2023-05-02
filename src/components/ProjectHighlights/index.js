@@ -33,25 +33,25 @@ const ProjectHighlights = () => {
                                 </Link>
                             </div>
                             <ButtonProjectName label={p.title} figma={p.isFigma}
-                                to={p.to} smallerFont={p.smallerFont }
+                                to={p.to} smallerFont={p.smallerFont}
                                 target="_blank" rel="noopener noreferrer"
                             />
                             <hr className={`border-${theme}-dark border-[1px] opacity-20 rounded mb-8`} />
                         </>
                     )
-                } else{
-                    return(<></>)
+                } else {
+                    return (<></>)
                 }
             })}
 
 
 
-<Link
-                                    to="/gallery"
-                                    className="my-5 mx-auto"
-                                >
-Find more in my <span className={` text-${theme}-special hover:text-${theme}-nav `}> Gallery</span>
-                                </Link>
+            <Link
+                to="/gallery"
+                className="my-5 mx-auto"
+            >
+                Find more in my <span className={` text-${theme}-special hover:text-${theme}-nav `}> Gallery</span>
+            </Link>
 
         </>
     )

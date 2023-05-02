@@ -19,7 +19,7 @@ const AboutMe = () => {
 
 
       <div className={`p-[50px] sm:px-[100px] sm:py-[60px] grow relative `} >
-
+{/* 
         <video
           autoPlay muted loop
           className="absolute top-0 left-0 w-full h-full object-cover z-0"
@@ -27,14 +27,14 @@ const AboutMe = () => {
           onCanPlay={() => setPlayBack()}
         >
           <source src={Video} type="video/mp4" />
-        </video>
+        </video> */}
         <div className="z-20 relative space-y-6 max-w-[700px] mx-auto">
-          <div className={`bg-${theme}-special text-white rounded-lg flex flex-col p-3 w-full  shadow-sm`} >
+          <div className={`bg-${theme}-special text-white rounded-lg flex flex-col p-3 w-full  shadow-lg`} >
 
             <h1 className="mx-auto text-[30px] sm:text-[36px] md:text-[42px]" >About Me</h1>
           </div>
 
-          <div className={`bg-${theme}-med text-${theme}-dark text-[15px] sm:text-[18px] md:text-[20px] rounded-lg flex flex-col py-7 px-5 w-full sm:p-10 shadow-sm space-y-7`} >
+          <div className={`bg-${theme}-med text-${theme}-dark text-[15px] sm:text-[18px] md:text-[20px] rounded-lg flex flex-col py-7 px-5 w-full sm:p-10 shadow-lg space-y-7`} >
 
             <p>
               Hi! I'm Colleen. I have a passion for getting inside something and finding out how it works. My career is heading down the UI/UX design and development path, but I was originally a chemist. That may seem like a big leap, but not to me.

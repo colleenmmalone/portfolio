@@ -62,7 +62,7 @@ const Nav = () => {
 
             <NavLink to="/settings" className={({ isActive }) => isActive ? linkActive : `hover:text-${theme}-med my-auto`}>
               <p className="flex">
-                <i className="bx bxs-cog text-2xl my-auto" exact />
+                <i className="bx bxs-cog text-2xl my-auto"  />
               </p>
             </NavLink>
 
