@@ -6,8 +6,8 @@ import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
 import Settings from "../pages/Settings";
 import Gallery from "../pages/Gallery";
-import AnimationPractice from "../pages/AnimationPractice";
 import AboutMe from "../pages/AboutMe";
+// import GuestBook from "../pages/GuestBook";
 
 
 const RoutesComp = () => {
@@ -22,7 +22,7 @@ const RoutesComp = () => {
               <Route path="/settings" element={<Settings />}  />
               <Route path="/gallery" element={<Gallery />}  />
               <Route path="/about" element={<AboutMe />}  />
-              <Route path="/animations" element={<AnimationPractice />}  />
+              {/* <Route path="/guestbook" element={<GuestBook />}  /> */}
 
               {/* Error page for all undefined paths  */}
               <Route path="*" element={<NotFound />} />

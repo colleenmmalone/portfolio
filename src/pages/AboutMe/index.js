@@ -1,17 +1,17 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 
-import { Video } from "../../img";
+// import { Video } from "../../img";
 
 
 const AboutMe = () => {
 
   const theme = useSelector((state) => state.changeTheme.theme);
 
-  const videoRef = useRef();
-  const setPlayBack = () => {
-    videoRef.current.playbackRate = 0.45;
-  };
+  // const videoRef = useRef();
+  // const setPlayBack = () => {
+  //   videoRef.current.playbackRate = 0.45;
+  // };
 
   return (
 
