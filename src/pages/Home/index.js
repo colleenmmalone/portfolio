@@ -2,6 +2,8 @@ import React from "react";
 import { useSelector } from "react-redux";
 import ProjectHighlights from "../../components/ProjectHighlights";
 import TechIcons from "../../components/TechIcons";
+import Button from "../../components/Button";
+import { Link } from "react-router-dom";
 
 const Home = () => {
 
@@ -28,6 +30,28 @@ const Home = () => {
                   <TechIcons />
                 </div>
               </div>
+
+              <div className="w-full flex">
+                <div className={`mx-auto mt-3 mb-0`} >
+                <Link
+                to="/gallery"
+            >
+                  <Button>View Latest Projects</Button>
+                  </Link>
+                </div>
+              </div>
+
+              <div className="w-full flex  my-0">
+                <div className={`mx-auto text-center`} >
+                  <Link
+                    to="/gallery"
+                    className="text-sm"
+                  >
+                    Don't like these colors? <span className={`m-0 p-0 text-${theme}-special hover:text-${theme}-nav underline`}>Check out some other themes here.</span>
+                  </Link>
+                </div>
+              </div>
+
             </div>
           </div>
 
