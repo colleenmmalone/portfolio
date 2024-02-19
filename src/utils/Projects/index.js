@@ -26,7 +26,7 @@ const Projects = [
     },
     {
         title: "Cake Quiz",
-        to: "https://stitchineer.github.io/cake-quiz/",
+        to: "https://colleenmmalone.github.io/cake-quiz/",
         img: Imgs.Quiz,
         alt: "cake quiz thumbnail",
         bg: "bg-white p-2",
@@ -61,7 +61,7 @@ const Projects = [
     },
     {
         title: "PokéAPI",
-        to: "https://stitchineer.github.io/PokeAPI/",
+        to: "https://colleenmmalone.github.io/PokeAPI/",
         img: Imgs.Poke,
         alt: "pokemon API thumbnail",
         bg: "bg-white",
@@ -73,7 +73,7 @@ const Projects = [
     },
     {
         title: "Knit Gauge",
-        to: "https://stitchineer.github.io/knit-gauge-calculator/",
+        to: "https://colleenmmalone.github.io/knit-gauge-calculator/",
         img: Imgs.Gauge,
         alt: "knitting gauge calculator thumbnail",
         bg: "bg-white",
@@ -84,7 +84,7 @@ const Projects = [
     },
     {
         title: "Simple Interest",
-        to: "https://stitchineer.github.io/simple-interest-calculator/",
+        to: "https://colleenmmalone.github.io/simple-interest-calculator/",
         img: Imgs.Interest,
         alt: "simple interest calculator thumbnail",
         bg: "bg-black p-2",
