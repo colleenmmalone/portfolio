@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import AddMeInsta from "../../components/AddMeInsta";
 
 // import { Video } from "../../img";
 
@@ -18,21 +19,15 @@ const AboutMe = () => {
     <>
 
 
-      <div className={`p-[50px] sm:px-[100px] sm:py-[60px] grow relative `} >
-{/* 
-        <video
-          autoPlay muted loop
-          className="absolute top-0 left-0 w-full h-full object-cover z-0"
-          ref={videoRef}
-          onCanPlay={() => setPlayBack()}
-        >
-          <source src={Video} type="video/mp4" />
-        </video> */}
-        <div className="z-20 relative space-y-6 max-w-[700px] mx-auto">
-          <div className={`bg-${theme}-special text-white rounded-lg flex flex-col p-3 w-full  shadow-lg`} >
+      <div className={`p-[50px] pt-0 sm:pb-[100px] sm:pb-[60px] grow relative max-w-[1140px] mx-auto`} >
+      <h1 className={`text-[55px] sm:text-[72px] md:text-[90px] text-${theme}-special `}>
+            About Me
+          </h1>
 
-            <h1 className="mx-auto text-[30px] sm:text-[36px] md:text-[42px]" >About Me</h1>
-          </div>
+          <hr className={`border-${theme}-special border-[1.5px] rounded mb-8`} />
+          <hr className={`border-${theme}-special border-[1.5px] rounded  mb-8`} />
+        <div className="z-20 relative space-y-6 max-w-[700px] mx-auto">
+
 
           <div className={`bg-${theme}-med text-${theme}-dark text-[15px] sm:text-[18px] md:text-[20px] rounded-lg flex flex-col py-7 px-5 w-full sm:p-10 shadow-lg space-y-7`} >
 
@@ -71,10 +66,16 @@ const AboutMe = () => {
             </div>
 
             <p>
-And while I have a lot of technical ability, I am also creative! If anyone tells you there is no creativity in coding or chemistry, ignore them. It has always existed in my career. Now that I am venturing into UX Design, I am able to stretch my creative muscles even further. I excel where tech and creativity meet.
-   </p>
+              And while I have a lot of technical ability, I am also creative! If anyone tells you there is no creativity in coding or chemistry, ignore them. It has always existed in my career. Now that I am venturing into UX Design, I am able to stretch my creative muscles even further. I excel where tech and creativity meet.
+            </p>
+            <hr className={`border-${theme}-dark border-[1px] opacity-20 rounded mb-8`} />
+
+            <AddMeInsta />
+
           </div>
+
         </div>
+
       </div>
 
     </>
