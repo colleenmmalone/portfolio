@@ -5,6 +5,7 @@ import Projects from "../../utils/Projects";
 
 import ButtonProjectName from "../../components/ButtonProjectName";
 import { Link } from "react-router-dom";
+import AddMeInsta from "../AddMeInsta";
 
 const ProjectHighlights = () => {
 
@@ -52,6 +53,8 @@ const ProjectHighlights = () => {
             >
                 Find more in my <span className={` text-${theme}-special hover:text-${theme}-nav `}> Gallery</span>
             </Link>
+
+            
 
         </>
     )
