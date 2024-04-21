@@ -1,14 +1,11 @@
 import React, { useState, useRef } from "react";
-import { useSelector } from "react-redux";
 import { Link, NavLink } from "react-router-dom";
 import { useClickAway } from "use-click-away";
 import { NavLinks } from "../NavLinks";
 
 
 const Nav = () => {
-
-  const theme = useSelector((state) => state.changeTheme.theme);
-
+  const theme = 'lavender';
   const linkActive = `text-${theme}-special font-bold my-auto`;
 
   const [isOpen, setIsOpen] = useState(false);
@@ -70,7 +67,7 @@ const Nav = () => {
         </div>
       </div>
 
-      <div className={` ${isOpen ? 'visible' : 'hidden'} absolute top-[50px] right-[25px] min-w-[200px] z-20 bg-${theme}-light dark:bg-${theme}-dark border-2 border-${theme}-dark dark:border-${theme}-light rounded-lg p-2 pb-4 text-[18px] flex flex-col space-y-2`} id="hamburger" ref={clickRef}>
+      <div className={` ${isOpen ? 'visible' : 'hidden'} absolute top-[50px] right-[25px] min-w-[200px] z-20 bg-${theme}-dark border-2 border-${theme}-light rounded-lg p-2 pb-4 text-[18px] flex flex-col space-y-2`} id="hamburger" ref={clickRef}>
 
         <button onClick={() => { setIsOpen(false) }} className={`ml-auto mr-2 text-2xl hover:text-${theme}-special`}><i className="bx bx-x" /></button>
 

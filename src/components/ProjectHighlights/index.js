@@ -1,16 +1,11 @@
 import React from "react";
-import { useSelector } from "react-redux";
-
 import Projects from "../../utils/Projects";
-
 import ButtonProjectName from "../../components/ButtonProjectName";
 import { Link } from "react-router-dom";
-import AddMeInsta from "../AddMeInsta";
 
 const ProjectHighlights = () => {
 
-    const theme = useSelector((state) => state.changeTheme.theme);
-
+    const theme = 'lavender';
     return (
         <>
             <div className={`border-y-2 border-${theme}-special py-3 md:py-4 xl:py-5`}>

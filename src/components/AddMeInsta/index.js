@@ -1,12 +1,9 @@
 import React from "react";
 import { SiInstagram } from "react-icons/si";
-import { useSelector } from "react-redux";
-
 import { Link } from "react-router-dom";
 
 const AddMeInsta = () => {
-
-    const theme = useSelector((state) => state.changeTheme.theme);
+    const theme = 'lavender';
 
     return (
         <div className="flex justify-center items-center space-x-2 text-md">

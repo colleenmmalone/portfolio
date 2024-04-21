@@ -1,11 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { useSelector } from "react-redux";
 import { Link } from 'react-router-dom';
 import { ReactIcon, Figma } from '../../img';
 
 const ButtonProjectName = ({ label = "Project Name", figma = false, className = '', to = "#" }) => {
-
-    const theme = useSelector((state) => state.changeTheme.theme);
+  const theme = 'lavender';
     const [isVisible, setIsVisible] = useState(false);
     const btnRef = useRef(null);
   

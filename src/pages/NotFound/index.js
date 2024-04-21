@@ -1,16 +1,13 @@
 import React from "react";
-import { useSelector } from "react-redux";
-
 
 const NotFound = () => {
-
-  const theme = useSelector((state) => state.changeTheme.theme);
+  const theme = 'lavender';
 
   return (
     <>
 
 
-      <div className={`div-screen-height bg-${theme}-light dark:bg-${theme}-dark  p-[50px] sm:px-[100px] sm:py-[60px]`}>
+      <div className={`div-screen-height bg-${theme}-dark  p-[50px] sm:px-[100px] sm:py-[60px]`}>
         <div className={`bg-${theme}-special rounded-lg flex flex-col p-7 mx-auto sm:p-10`} >
 
 

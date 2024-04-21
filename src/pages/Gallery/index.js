@@ -1,12 +1,10 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import Projects from "../../utils/Projects";
 import { Link } from "react-router-dom";
 
 
 const Gallery = () => {
-
-  const theme = useSelector((state) => state.changeTheme.theme);
+  const theme = 'lavender';
   const padding = "px-[25px] sm:px-[40px] xl:px-[55px] 3xl:px-[60px] ";
 
   return (
@@ -72,7 +70,7 @@ const Gallery = () => {
 
 
         <hr className={`border-${theme}-special border-[1.5px] rounded  my-8 `} />
-          <div className={`max-w-[650px] space-y-2 text-${theme}-dark dark:text-${theme}-light text-[14px] mx-auto my-8`}>
+          <div className={`max-w-[650px] space-y-2 text-${theme}-light text-[14px] mx-auto my-8`}>
            <h1 className={`text-[18px] sm:text-[20px] text-${theme}-special `}>
           Hold on...isn't this Figma design the same as an actual website?
         </h1>

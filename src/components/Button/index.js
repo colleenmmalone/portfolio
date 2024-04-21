@@ -1,9 +1,7 @@
 import React from 'react';
-import { useSelector } from "react-redux";
 
 const Button = ({ children, type }) => {
-
-    const theme = useSelector((state) => state.changeTheme.theme);
+    const theme = 'lavender';
 
     const primary = `bg-${theme}-special text-white`;
     const secondary = `text-${theme}-special bg-white`;

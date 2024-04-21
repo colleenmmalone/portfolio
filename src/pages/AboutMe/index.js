@@ -1,13 +1,8 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import AddMeInsta from "../../components/AddMeInsta";
 
-// import { Video } from "../../img";
-
-
 const AboutMe = () => {
-
-  const theme = useSelector((state) => state.changeTheme.theme);
+  const theme = 'lavender';
 
   // const videoRef = useRef();
   // const setPlayBack = () => {

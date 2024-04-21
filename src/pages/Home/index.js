@@ -1,13 +1,11 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import ProjectHighlights from "../../components/ProjectHighlights";
 import TechIcons from "../../components/TechIcons";
 import Button from "../../components/Button";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-
-  const theme = useSelector((state) => state.changeTheme.theme);
+  const theme = 'lavender';
   const padding = "px-[25px] sm:px-[40px] xl:px-[55px] 3xl:px-[60px] ";
 
   return (
@@ -25,8 +23,8 @@ const Home = () => {
                 I am a UI dev and designer, blending creativity with my technical background.
               </h3>
 
-              <div className={`mx-auto w-fit rounded-lg bg-gradient-to-r from-${theme}-dark dark:from-${theme}-light via-${theme}-special dark:via-${theme}-special to-${theme}-nav dark:to-${theme}-nav p-1`}>
-                <div className={`bg-${theme}-light dark:bg-${theme}-dark m-0 p-3 rounded-lg opacity-90`}>
+              <div className={`mx-auto w-fit rounded-lg bg-gradient-to-r from-${theme}-light via-${theme}-special to-${theme}-nav p-1`}>
+                <div className={`bg-${theme}-dark m-0 p-3 rounded-lg opacity-90`}>
                   <TechIcons />
                 </div>
               </div>
