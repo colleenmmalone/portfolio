@@ -3,57 +3,42 @@
 @tailwind utilities;
 
 @import "https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css";
+@import "./styles/navlinks.scss";
 
 @font-face {
-  font-family: "Krona One";
-  src: url('fonts/Krona_One/KronaOne-Regular.ttf');
+  font-family: "Inter";
+  src: url('fonts/Inter/static/Inter-Regular.ttf');
 }
 
 @font-face {
   font-family: "Karla";
   src: url('fonts/Karla/static/Karla-Regular.ttf');
 }
+
 @font-face {
-  font-family: "Rounded Elegance";
-  src: url('fonts/Rounded\ Elegance.ttf');
-}
-@font-face {
-  font-family: "Mick Kaster";
-  src: url('fonts/mick-caster/Mick\ Caster.ttf');
-}
-@font-face {
-  font-family: "Josefin Sans";
-  src: url('fonts/Josefin_Sans/static/JosefinSans-Regular.ttf');
-}
-@font-face {
-  font-family: "Inter";
-  src: url('fonts/Inter/static/Inter-Regular.ttf');
+  font-family: "Lilita One";
+  src: url('fonts/Lilita_One/LilitaOne-Regular.ttf');
 }
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Karla', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-.font-krona {
-  font-family: 'Krona One';
+.font-inter {
+  font-family: 'Inter';
 }
 
 .font-karla {
   font-family: 'Karla';
 }
-.font-mick {
-  font-family: 'Mick Kaster';
+
+.font-lilita {
+  font-family: 'Lilita One';
 }
-.font-josefin {
-  font-family: 'Josefin Sans';
-}
-.font-inter {
-  font-family: 'Inter';
-}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -84,7 +69,6 @@ code {
 .shadow-lg{
   box-shadow: 0px 8px 8px #0003;
 }
-
 
 a.active{
   @apply: text-black;

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ReactIcon, Figma } from '../../img';
 
 const ButtonProjectName = ({ label = "Project Name", figma = false, className = '', to = "#" }) => {
-  const theme = 'lavender';
+  
     const [isVisible, setIsVisible] = useState(false);
     const btnRef = useRef(null);
   
@@ -39,9 +39,9 @@ const ButtonProjectName = ({ label = "Project Name", figma = false, className = 
             // }}
         >
             <Link to={to} target="_blank" rel="noopener noreferrer">
-                <button className={` bg-${theme}-special flex p-0 w-full rounded-[16px] h-[4rem] overflow-hidden ${className} shadow-sm hover:bg-${theme}-nav`} >
+                <button className={` bg-special flex p-0 w-full rounded-[16px] h-[4rem] overflow-hidden ${className} shadow-sm hover:bg-nav`} >
 
-                    <div className={` bg-${theme}-light w-[25%] h-full rounded-r-full p-3 flex`}>
+                    <div className={` bg-light w-[25%] h-full rounded-r-full p-3 flex`}>
                         <img src={figma ? Figma : ReactIcon} className={`mx-auto h-full`} alt={`${figma ? 'Figma' : 'React'} icon  `} />
                     </div>
 

@@ -5,7 +5,7 @@ import Button from "../../components/Button";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-  const theme = 'lavender';
+  
   const padding = "px-[25px] sm:px-[40px] xl:px-[55px] 3xl:px-[60px] ";
 
   return (
@@ -16,15 +16,15 @@ const Home = () => {
 
           <div className={`h-auto xl:div-screen-height xl:w-full w-[100vw] flex `}>
             <div className={`${padding} space-y-7 my-6 xl:my-auto mx-auto `} >
-              <h1 className={`text-[46px] sm:text-[72px] md:text-[85px] text-${theme}-special font-inter max-w-[792px] mx-auto`}>
+              <h1 className={`text-[46px] sm:text-[72px] md:text-[85px] text-special font-inter max-w-[792px] mx-auto`}>
                 Hi! I’m Colleen.
               </h1>
               <h3 className={`pb-6 text-[30px] sm:text-[35px] md:text-[40px] lg:text-[45px] lg:leading-[60px] font-karla  max-w-[792px] mx-auto`} >
                 I am a UI dev and designer, blending creativity with my technical background.
               </h3>
 
-              <div className={`mx-auto w-fit rounded-lg bg-gradient-to-r from-${theme}-light via-${theme}-special to-${theme}-nav p-1`}>
-                <div className={`bg-${theme}-dark m-0 p-3 rounded-lg opacity-90`}>
+              <div className={`mx-auto w-fit rounded-lg bg-gradient-to-r from-light via-special to-nav p-1`}>
+                <div className={`bg-dark m-0 p-3 rounded-lg opacity-90`}>
                   <TechIcons />
                 </div>
               </div>
@@ -45,7 +45,7 @@ const Home = () => {
                     to="/gallery"
                     className="text-sm"
                   >
-                    Don't like these colors? <span className={`m-0 p-0 text-${theme}-special hover:text-${theme}-nav underline`}>Check out some other themes here.</span>
+                    Don't like these colors? <span className={`m-0 p-0 text-special hover:text-nav underline`}>Check out some other themes here.</span>
                   </Link>
                 </div>
               </div>
@@ -57,7 +57,7 @@ const Home = () => {
           <div className={`
           hidden xl:block 
           div-screen-height overflow-y-scroll
-          bg-${theme}-med text-${theme}-dark 
+          bg-med text-dark 
           w-[34%] max-w-[670px] min-w-[470px]
           mt-0 py-12 rounded-t-[0px] 
           ${padding}
@@ -71,7 +71,7 @@ const Home = () => {
           {/* || °.°.° MOBILE PANEL °.°.° ||  */}
           <div className={` 
           block xl:hidden
-          bg-${theme}-med text-${theme}-dark 
+          bg-med text-dark 
           w-full max-w-[500px]
           mt-10 mb-10 mx-auto py-12 rounded-[30px]
           px-9

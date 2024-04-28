@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 
 const ProjectHighlights = () => {
 
-    const theme = 'lavender';
+    
     return (
         <>
-            <div className={`border-y-2 border-${theme}-special py-3 md:py-4 xl:py-5`}>
+            <div className={`border-y-2 border-special py-3 md:py-4 xl:py-5`}>
                 <h1
-                    className={`text-3xl sm:text-[40px] md:text-[45px] lg:text-[50px] xl:text-[40px] 3xl:text-[45px] text-center font-semibold text-${theme}-dark font-mick`}>
+                    className={`text-3xl sm:text-[40px] md:text-[45px] lg:text-[50px] xl:text-[40px] 3xl:text-[45px] text-center font-semibold text-dark font-mick`}>
                     Project Highlights
                 </h1>
             </div>
@@ -32,7 +32,7 @@ const ProjectHighlights = () => {
                                 to={p.to} smallerFont={p.smallerFont}
                                 target="_blank" rel="noopener noreferrer"
                             />
-                            <hr className={`border-${theme}-dark border-[1px] opacity-20 rounded mb-8`} />
+                            <hr className={`border-dark border-[1px] opacity-20 rounded mb-8`} />
                         </>
                     )
                 } else {
@@ -46,7 +46,7 @@ const ProjectHighlights = () => {
                 to="/gallery"
                 className="my-5 mx-auto"
             >
-                Find more in my <span className={` text-${theme}-special hover:text-${theme}-nav `}> Gallery</span>
+                Find more in my <span className={` text-special hover:text-nav `}> Gallery</span>
             </Link>
 
             
