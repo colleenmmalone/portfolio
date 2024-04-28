@@ -8,7 +8,7 @@ export const Layout = () => {
     // wraps entire page
     <div id="wrapper"
       className={` p-0 flex flex-col min-h-[100vh]
-       bg-dark text-light
+       bg-darker text-white font-karla
       `}
     >
       <Nav />

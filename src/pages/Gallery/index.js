@@ -26,7 +26,7 @@ const Gallery = () => {
               <>
                 <div className={`grid grid-cols-1 sm:grid-cols-2 gap-8 bg-med rounded-[8px] shadow-sm px-6 py-7 max-w-[550px] mx-auto`} key={`project${i}`}>
                   <div className="m-0 p-0 w-full block sm:hidden max-w-[350px] mx-auto">
-                    <h1 className={`text-center text-3xl text-dark font-inter`} >{p.title}</h1>
+                    <h1 className={`text-center text-3xl text-dark`} >{p.title}</h1>
                     <hr className={`border-special border-[1px] rounded`} />
                   </div>
 
@@ -46,7 +46,7 @@ const Gallery = () => {
                       to={p.to}
                       target="_blank" rel="noopener noreferrer"
                     >
-                      <h1 className={`text-center text-2xl text-dark font-inter hover:text-special`} >{p.title}</h1>
+                      <h1 className={`text-center text-2xl text-dark hover:text-special`} >{p.title}</h1>
                       </Link>
                       <hr className={`border-special border-[1px] mb-3 rounded`} />
                     </div>

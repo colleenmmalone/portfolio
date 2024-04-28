@@ -46,7 +46,7 @@ const ButtonProjectName = ({ label = "Project Name", figma = false, className = 
                     </div>
 
                     <div className='my-auto'>
-                        <p className={`my-auto w-full pl-4 text-left text-[1.4rem] md:text-xl text-white font-inter leading-7`} >{label}</p>
+                        <p className={`my-auto w-full pl-4 text-left text-[1.4rem] md:text-xl text-white leading-7`} >{label}</p>
                     </div>
 
                 </button>
