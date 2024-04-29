@@ -11,10 +11,10 @@ const HomeMainContent = () => {
     return (
         <div className={`${padding} space-y-[70px] my-6 xl:my-auto mx-auto `} >
             <div className='flex flex-col space-y-[6px] text-left'>
-                <h1 className={`text-[46px] sm:text-[72px] md:text-[85px] text-lighter font-lilita leading-none`}>
+                <h1 className={`text-[46px] sm:text-[72px] md:text-[82px] text-lighter font-lilita leading-none`}>
                     Hi! I’m Colleen.
                 </h1>
-                <h3 className={`text-[30px] sm:text-[35px] md:text-[40px] lg:text-[45px] leading-tight`} >
+                <h3 className={`text-[30px] sm:text-[35px] md:text-[40px] lg:text-[45px] leading-snug`} >
                     I am a UI dev and designer, blending creativity with my technical background.
                 </h3>
             </div>
@@ -26,7 +26,7 @@ const HomeMainContent = () => {
             </div>
 
             <div className="w-full flex">
-                <div className={`mx-auto mt-3 mb-0 text-[32px] fw-500`} >
+                <div className={`mx-auto mt-3 mb-0 text-[28px] fw-500`} >
                     <Link to="/gallery">
                         <Button>View Latest Projects</Button>
                     </Link>

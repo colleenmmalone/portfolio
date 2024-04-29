@@ -24,10 +24,12 @@ body {
 
 .font-karla {
   font-family: 'Karla';
+  line-height: 100%;
 }
 
 .font-lilita {
   font-family: 'Lilita One';
+  letter-spacing: 1.5%;
 }
 
 code {

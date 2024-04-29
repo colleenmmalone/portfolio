@@ -7,7 +7,7 @@ const Button = ({ children, type }) => {
     const secondary = `text-special bg-white`;
 
     return (
-        <button className={`border-[3px] border-special ${type === "secondary" ? secondary : primary} rounded-lg px-4 py-2`} >
+        <button className={`border-[3px] border-special ${type === "secondary" ? secondary : primary} rounded-[24px] py-[28px] px-[32px]`} >
             {children}
         </button>
     );

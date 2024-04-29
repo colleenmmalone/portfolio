@@ -7,7 +7,7 @@ const Projects = [
         img: Imgs.Dee,
         alt: "Dee Bakes thumbnail",
         bg: "bg-white ",
-        isFigma: true,
+        tech: 'Figma Prototype',
         paragraphs: [
             "I created a Figma redesign of my friend's website as a fun little surprise.",
             "Available in Desktop and Mobile Views"
@@ -19,7 +19,7 @@ const Projects = [
         img: Imgs.Hoopla,
         alt: "hoopla thumbnail",
         bg: "bg-white",
-        isFigma: true,
+        tech: 'Figma Prototype',
         paragraphs: [
             "Hoopla is a sleep noise mobile app. This adorable owl is the first logo designed by me, Colleen. I learned a lot about creating and manipulating shapes in Figma. After the logo was created, all I needed was an app to go with it! Hoot!",
         ]
@@ -30,7 +30,7 @@ const Projects = [
         img: Imgs.Quiz,
         alt: "cake quiz thumbnail",
         bg: "bg-white p-2",
-        isFigma: false,
+        tech: 'React App',
         paragraphs: [
             "I am sure you really want to know what kind of cake flavor you are :)",
             "ChatGPT-4 wrote the questions, and I wrote the code."
@@ -42,7 +42,7 @@ const Projects = [
         img: Imgs.Band,
         alt: "band thumbnail",
         bg: "bg-black px-12",
-        isFigma: true,
+        tech: 'Figma Prototype',
         paragraphs: [
             "I designed this site with my musician friend in mind. I wanted a page that highlighted all the important things for a musician: music, merch, shows, booking. Many times I'll go to a local band's webiste and struggle to find these things.",
         ]
@@ -53,7 +53,7 @@ const Projects = [
         img: Imgs.Supreme,
         alt: "supreme cryptocurrency app thumbnail",
         bg: "bg-white",
-        isFigma: true,
+        tech: 'Figma Prototype',
         paragraphs: [
             "This was my first foray into Figma as a designer as opposed to as a developer. Obviously, my design abilities have vastly improved since then, but I still enjoy this for the fun little app that it is.",
             "I made this while following Pierluigi Giglio's class on Udemy."
@@ -65,7 +65,7 @@ const Projects = [
         img: Imgs.Poke,
         alt: "pokemon API thumbnail",
         bg: "bg-white",
-        isFigma: false,
+        tech: 'React App',
         paragraphs: [
             "I wrote this app when I first learned how to use RESTful API calls. PokéAPI is a repository that contains any information you could possibly want to know about any Pokémon ever created.",
             "Simply search for the name or number to pull up a simple dashboard of information about your favorite Pokémon.",
@@ -77,7 +77,7 @@ const Projects = [
         img: Imgs.Gauge,
         alt: "knitting gauge calculator thumbnail",
         bg: "bg-white",
-        isFigma: false,
+        tech: 'React App',
         paragraphs: [
             "This is a calculator that will help you determine that gague required for a knitting (or crochet) project. This is helpful for when you end up using a different weight yarn or size needles than what the pattern calls for.",
         ]
@@ -88,7 +88,7 @@ const Projects = [
         img: Imgs.Interest,
         alt: "simple interest calculator thumbnail",
         bg: "bg-black p-2",
-        isFigma: false,
+        tech: 'React App',
         paragraphs: [
             "One of my earliest coding projects. Calculates the amount of interest a deposit can earn over some length of time. ",
         ]

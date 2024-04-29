@@ -27,7 +27,7 @@ const Home = () => {
           ${padding}
           flex space-y-12
           `}>
-            <div className="w-full mx-auto max-w-[350px] flex flex-col space-y-12">
+            <div className="w-full mx-auto max-w-[350px] flex flex-col space-y-[60px]">
               <ProjectHighlights />
             </div>
           </div>
@@ -42,7 +42,7 @@ const Home = () => {
           shadow 
           flex space-y-12
           `}>
-            <div className="w-full mx-auto max-w-[350px] flex flex-col space-y-12">
+            <div className="w-full mx-auto max-w-[350px] flex flex-col space-y-[50px]">
               <ProjectHighlights />
             </div>
           </div>

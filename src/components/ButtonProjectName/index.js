@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ReactIcon, Figma } from '../../img';
 
-const ButtonProjectName = ({ label = "Project Name", figma = false, className = '', to = "#" }) => {
+const ButtonProjectName = ({ label = "Project Name", tech = '', className = '', to = "#" }) => {
   
     const [isVisible, setIsVisible] = useState(false);
     const btnRef = useRef(null);
@@ -32,23 +32,11 @@ const ButtonProjectName = ({ label = "Project Name", figma = false, className = 
     return (
         <div
         ref={btnRef}
-            className={` ${isVisible ? "animate-slide" : ""} `}
-            // style={{
-            //     opacity: isVisible ? 1 : 0,
-            //     transition: 'opacity .2s ease-in-out',
-            // }}
         >
             <Link to={to} target="_blank" rel="noopener noreferrer">
-                <button className={` bg-special flex p-0 w-full rounded-[16px] h-[4rem] overflow-hidden ${className} shadow-sm hover:bg-nav`} >
-
-                    <div className={` bg-light w-[25%] h-full rounded-r-full p-3 flex`}>
-                        <img src={figma ? Figma : ReactIcon} className={`mx-auto h-full`} alt={`${figma ? 'Figma' : 'React'} icon  `} />
-                    </div>
-
-                    <div className='my-auto'>
-                        <p className={`my-auto w-full pl-4 text-left text-[1.4rem] md:text-xl text-white leading-7`} >{label}</p>
-                    </div>
-
+                <button className={` mt-[12px] p-0 w-full text-white`} >
+                        <p className={`m-0 w-full text-left text-[1.4rem] md:text-[24px] fw-500 hover:underline`} >{label}</p>
+                        <p className={`m-0 mt-3  w-full text-left text-[1.4rem] md:text-[20px] opacity-80 `} >{tech}</p>
                 </button>
             </Link>
         </div>

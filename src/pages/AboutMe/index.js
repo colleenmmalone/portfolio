@@ -1,8 +1,9 @@
 import React from "react";
 import AddMeInsta from "../../components/AddMeInsta";
+import Title from "../../components/Title";
 
 const AboutMe = () => {
-  
+
 
   // const videoRef = useRef();
   // const setPlayBack = () => {
@@ -14,16 +15,12 @@ const AboutMe = () => {
     <>
 
 
-      <div className={`p-[50px] pt-0 sm:pb-[100px] sm:pb-[60px] grow relative max-w-[1140px] mx-auto`} >
-      <h1 className={`text-[55px] sm:text-[72px] md:text-[90px] text-special `}>
-            About Me
-          </h1>
+      <div className={`p-[50px] pt-[60px] sm:pb-[100px] sm:pb-[60px] grow relative max-w-[1140px] mx-auto space-y-[60px]`} >
+        <Title className='text-lg sm:text-[48px]'>
+          About Me
+        </Title >
 
-          <hr className={`border-special border-[1.5px] rounded mb-8`} />
-          <hr className={`border-special border-[1.5px] rounded  mb-8`} />
         <div className="z-20 relative space-y-6 max-w-[700px] mx-auto">
-
-
           <div className={`bg-med text-dark text-[15px] sm:text-[18px] md:text-[20px] rounded-lg flex flex-col py-7 px-5 w-full sm:p-10 shadow-lg space-y-7`} >
 
             <p>
