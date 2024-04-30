@@ -14,9 +14,9 @@ module.exports = {
         darkest: "#191120", 
         darker: "#30243B", 
         medium: "#40314F", 
-        light: "#B28DDC", 
-        lighter: "#CFA4FF", 
-        lightest: "#FFC0CB"
+        light: "#6F5488", 
+        lighter: "#B28DDC", 
+        lightest: "#CFA4FF"
       },
       animation: {
         'slide': 'slide 3s ease-out',

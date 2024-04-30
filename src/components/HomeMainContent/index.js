@@ -9,9 +9,9 @@ const HomeMainContent = () => {
     const padding = "px-[25px] sm:px-[40px] xl:px-[55px] 3xl:px-[60px] pt-[20px] md:pt-[40px] xl:pt-0";
 
     return (
-        <div className={`${padding} space-y-[40px] lg:space-y-[70px] my-6 xl:my-auto mx-auto `} >
+        <div className={`${padding} space-y-[40px] lg:space-y-[70px] my-6 xl:my-auto mx-auto z-30`} >
             <div className='flex flex-col space-y-[6px] text-center xl:text-left'>
-                <h1 className={`text-[46px] sm:text-[72px] md:text-[82px] text-lighter font-lilita leading-none`}>
+                <h1 className={`text-[46px] sm:text-[72px] md:text-[82px] text-lightest font-lilita leading-none`}>
                     Hi! I’m Colleen.
                 </h1>
                 <h3 className={`text-[30px] sm:text-[35px] md:text-[40px] lg:text-[45px] leading-snug`} >
@@ -28,11 +28,10 @@ const HomeMainContent = () => {
             <div className="w-full flex">
                 <div className={`mx-auto mt-3 mb-0 text-[20px] xl:text-[28px] fw-500`} >
                     <Link to="/gallery">
-                        <Button>View Latest Projects</Button>
+                        <Button>View Portfolio</Button>
                     </Link>
                 </div>
             </div>
-
         </div>
     );
 };
