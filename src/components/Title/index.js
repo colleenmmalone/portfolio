@@ -4,7 +4,7 @@ const Title = ({ children, className = '' }) => {
 
     return (
 
-        <div className={`border-b-[3px] border-lighter py-3 md:py-4 xl:py-5 `}>
+        <div className={`border-b-[3px] border-lighter`}>
             <h1
                 className={` text-center fw-500 font-lilita pb-2 ${className}`}>
                 {children}

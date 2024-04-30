@@ -8,7 +8,7 @@ const NavLinks = () => {
     return (
         <>
         {/* || °.°.° NAV LINKS °.°.° ||  */}
-        <div className="flex h-full ml-auto my-auto">
+        <div className="flex h-[60px] md:h-full m-auto md:mr-0">
           <div className="inline-flex h-full my-0">
 
             {NavLinksPaths.map((n, i) => {

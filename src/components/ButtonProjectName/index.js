@@ -1,37 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { ReactIcon, Figma } from '../../img';
 
 const ButtonProjectName = ({ label = "Project Name", tech = '', className = '', to = "#" }) => {
-  
-    const [isVisible, setIsVisible] = useState(false);
-    const btnRef = useRef(null);
-  
-    useEffect(() => {
-      const image = btnRef.current;
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-            observer.unobserve(image);
-          }
-        },
-        {
-          rootMargin: '0px',
-          threshold: 0.1,
-        }
-      );
-  
-      observer.observe(image);
-  
-      return () => {
-        observer.unobserve(image);
-      };
-    }, []);
 
     return (
         <div
-        ref={btnRef}
         >
             <Link to={to} target="_blank" rel="noopener noreferrer">
                 <button className={` mt-[12px] p-0 w-full text-white`} >

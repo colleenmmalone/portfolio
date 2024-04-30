@@ -17,7 +17,7 @@
 
 body {
   margin: 0;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Arial', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -32,9 +32,8 @@ body {
   letter-spacing: 1.5%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.font-neutral {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',;
 }
 
 .p-default{

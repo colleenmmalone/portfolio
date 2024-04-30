@@ -37,7 +37,7 @@ const Home = () => {
           block xl:hidden
           bg-med text-dark 
           w-full max-w-[500px]
-          mt-10 mb-10 mx-auto py-12 rounded-[30px]
+          mt-10 mb-0 mx-auto pt-10 pb-12 rounded-t-[30px]
           px-9
           shadow 
           flex space-y-12

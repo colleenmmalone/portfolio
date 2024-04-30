@@ -1,76 +1,37 @@
 import React from "react";
 import Projects from "../../utils/Projects";
-import { Link } from "react-router-dom";
 import Title from "../../components/Title";
+import GalleryCard from "../../components/GalleryCard";
 
 
 const Gallery = () => {
 
-  const padding = "px-[25px] sm:px-[40px] xl:px-[55px] 3xl:px-[60px] p-[50px] pt-[60px]";
+  const padding = "px-[30px] sm:px-[40px] xl:px-[55px] 3xl:px-[60px] py-[30px] lg:py-[50px] ";
+
 
   return (
     <>
-      <div className={`min-h-[100vh] mx-auto ${padding} space-y-[60px]`}>
-        <Title className='text-lg sm:text-[48px]'>
+      <div className={`min-h-[100vh] mx-auto ${padding} space-y-[50px]`}>
+        <Title className='text-[40px] md:text-[48px]'>
           Gallery
         </Title >
-        
 
+        {/* 1 - 2 column grid  */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 px-0">
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-0">
-
+          {/* Project Card  */}
           {Projects.map((p, i) => {
-
             return (
               <>
-                <div className={`grid grid-cols-1 sm:grid-cols-2 gap-8 bg-med rounded-[8px] shadow-sm px-6 py-7 max-w-[550px] mx-auto`} key={`project${i}`}>
-                  <div className="m-0 p-0 w-full block sm:hidden max-w-[350px] mx-auto">
-                    <h1 className={`text-center text-3xl text-dark`} >{p.title}</h1>
-                    <hr className={`border-special border-[1px] rounded`} />
-                  </div>
-
-                  <div className={`w-full mx-auto ${p.bg} h-fit rounded-[8px] max-w-[350px] overflow-hidden shadow-sm`}>
-                    <Link
-                      to={p.to}
-                      target="_blank" rel="noopener noreferrer"
-                    >
-                      <img src={p.img} alt={p.alt} className="w-full opacity-80 hover:opacity-100" />
-                    </Link>
-                  </div>
-
-                  <div className="w-full max-w-[350px] mx-auto" >
-
-                    <div className="m-0 p-0 w-full hidden sm:block">
-                      <Link
-                        to={p.to}
-                        target="_blank" rel="noopener noreferrer"
-                      >
-                        <h1 className={`text-center text-2xl text-dark hover:text-special`} >{p.title}</h1>
-                      </Link>
-                      <hr className={`border-special border-[1px] mb-3 rounded`} />
-                    </div>
-
-                    <div className="space-y-3 ">
-                      {p.paragraphs?.map((t, d) => {
-                        return (
-                          <p className={` text-dark text-[14px] `} key={`paragraph${i}-${d}`}>{t}</p>
-                        )
-                      })}
-                    </div>
-                  </div>
-
-                </div>
+                <GalleryCard p={p} i={i} />
               </>
             )
-
           })}
         </div>
 
-
-
         <hr className={`border-special border-[1.5px] rounded  my-8 `} />
-        <div className={`max-w-[650px] space-y-2 text-light text-[14px] mx-auto my-8`}>
-          <h1 className={`text-[18px] sm:text-[20px] text-special `}>
+        <div className={`max-w-[650px] space-y-2 text-[16px] mx-auto my-8 leading-tight`}>
+          <h1 className={`text-[18px] sm:text-[20px] text-lighter`}>
             Hold on...isn't this Figma design the same as an actual website?
           </h1>
 

@@ -4,10 +4,9 @@ const Button = ({ children, type }) => {
     
 
     const primary = `bg-special text-darkest hover:bg-lighter hover:border-lighter`;
-    const secondary = `text-special bg-white`;
 
     return (
-        <button className={`border-[3px] border-special ${type === "secondary" ? secondary : primary} rounded-[24px] py-[28px] px-[32px]`} >
+        <button className={` ${primary} rounded-[10px] py-[16px] px-[16px] xl:rounded-[24px] xl:py-[28px] xl:px-[32px]`} >
             {children}
         </button>
     );
