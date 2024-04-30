@@ -1,32 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.45cb029b.css",
-    "main.js": "/portfolio/static/js/main.4b686405.js",
+    "main.css": "/portfolio/static/css/main.3f0aac71.css",
+    "main.js": "/portfolio/static/js/main.33e8b684.js",
     "static/media/quiz.png": "/portfolio/static/media/quiz.2423478cc5c147b29b5d.png",
     "static/media/dee.png": "/portfolio/static/media/dee.94bf91fe3e7cfe36cb4d.png",
     "static/media/gauge.png": "/portfolio/static/media/gauge.7e137d2ca5e7047c7b09.png",
     "static/media/poke.png": "/portfolio/static/media/poke.23660bb5e71cf89a0040.png",
     "static/media/supreme.png": "/portfolio/static/media/supreme.2bc16d4293574b21f198.png",
-    "static/media/react.png": "/portfolio/static/media/react.8a6fc0a24a800d1e0f4a.png",
     "static/media/band.png": "/portfolio/static/media/band.a0088337b4643e3e91f8.png",
-    "static/media/html.png": "/portfolio/static/media/html.67aa7bcb1b1e3f94a085.png",
-    "static/media/bootstrap.png": "/portfolio/static/media/bootstrap.021384b799e706cd1709.png",
+    "static/media/boba.png": "/portfolio/static/media/boba.d0523e93238699cb7842.png",
     "static/media/me.jpeg": "/portfolio/static/media/me.a28e7ac24f5eababd1ac.jpeg",
     "static/media/interest.png": "/portfolio/static/media/interest.67695d627ee9798add05.png",
-    "static/media/js.png": "/portfolio/static/media/js.876a32e76ba8d9ffccd9.png",
+    "static/media/valentine.png": "/portfolio/static/media/valentine.f03e3e27372363b0dde7.png",
     "static/media/Karla-Regular.ttf": "/portfolio/static/media/Karla-Regular.fa3a282cea1a68f3717d.ttf",
-    "static/media/tailwind.png": "/portfolio/static/media/tailwind.087f91401d142f1a4903.png",
     "static/media/LilitaOne-Regular.ttf": "/portfolio/static/media/LilitaOne-Regular.e970d047065ed950bb8c.ttf",
-    "static/media/css.png": "/portfolio/static/media/css.930d3a7987a800b2a791.png",
-    "static/media/github.png": "/portfolio/static/media/github.a855c3975c028d8069f5.png",
-    "static/media/figma.png": "/portfolio/static/media/figma.72fbc535ebe253a5dbc4.png",
     "static/media/hoopla.svg": "/portfolio/static/media/hoopla.8ba791ab29ab64eff9d64c236d0dece4.svg",
     "index.html": "/portfolio/index.html",
-    "main.45cb029b.css.map": "/portfolio/static/css/main.45cb029b.css.map",
-    "main.4b686405.js.map": "/portfolio/static/js/main.4b686405.js.map"
+    "main.3f0aac71.css.map": "/portfolio/static/css/main.3f0aac71.css.map",
+    "main.33e8b684.js.map": "/portfolio/static/js/main.33e8b684.js.map"
   },
   "entrypoints": [
-    "static/css/main.45cb029b.css",
-    "static/js/main.4b686405.js"
+    "static/css/main.3f0aac71.css",
+    "static/js/main.33e8b684.js"
   ]
 }
