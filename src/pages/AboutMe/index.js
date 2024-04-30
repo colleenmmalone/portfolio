@@ -58,14 +58,13 @@ const AboutMe = () => {
               <div className={`flex space-x-3 text-2xl mx-auto text-dark opacity-80`}>
 
                 <i className="bx bx-palette" />
-                {/* <i className="bx bx-brain" /> */}
                 <i className="bx bx-bulb " />
                 <i className="bx bx-palette " />
 
               </div>
 
               <p>
-                And while I have a lot of technical ability, I am also creative! If anyone tells you there is no creativity in coding or chemistry, ignore them. It has always existed in my career. Now that I am venturing into UX Design, I am able to stretch my creative muscles even further. I excel where tech and creativity meet.
+                And while I have plenty of technical ability, I am also creative! If anyone tells you there is no creativity in coding or chemistry, ignore them. It has always existed in my career. Now that I am venturing into UX Design, I am able to stretch my creative muscles even further and continue to excel where tech and creativity meet.
               </p>
 
             </div>

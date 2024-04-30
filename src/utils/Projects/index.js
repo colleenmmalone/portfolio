@@ -22,7 +22,7 @@ const Projects = [
         paragraphs: [
             "This is my very first SwiftUI iOS app! It is an idle clicker boba tea shop. ",
             "An idle clicker style of game where the user continually unlocks upgrades to increase profits. But as the profits increase, so do the costs of the upgrades...",
-            'I  am using \'s icon "Boba" from TheNounProject.com and recolored it in Figma to match the recipes I chose.'
+            'I am using Andre Buand\'s icon "Boba" from TheNounProject.com and recolored it in Figma to match the recipes I chose.'
         ]
     },
     {
@@ -103,7 +103,7 @@ const Projects = [
         tech: 'React App',
         bg: 'bg-white',
         paragraphs: [
-            "This is a calculator that will help you determine that gague required for a knitting (or crochet) project. This is helpful for when you end up using a different weight yarn or size needles than what the pattern calls for.",
+            "This is a calculator that will help you determine the gauge required for a knitting (or crochet) project. This is helpful for when you end up using a different weight yarn or size needles than what the pattern calls for.",
         ]
     },
     {

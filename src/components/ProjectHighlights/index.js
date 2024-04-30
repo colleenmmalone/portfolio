@@ -9,7 +9,7 @@ const ProjectHighlights = () => {
 
     return (
         <>
-            <Title className='text-3xl sm:text-[42px]'>
+            <Title className='text-3xl sm:text-[42px] pb-6'>
                 Project Highlights
             </Title >
 
