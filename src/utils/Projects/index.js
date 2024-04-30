@@ -2,6 +2,30 @@ import * as Imgs from "../../img";
 
 const Projects = [
     {
+        title: "Be My Valentine",
+        to: "https://colleenmmalone.github.io/valentine/",
+        img: Imgs.Valentine,
+        alt: "will you be my valentine thumbnail",
+        tech: 'React App',
+        bg: 'bg-white',
+        paragraphs: [
+            "This is a very silly app for Valentine's Day, inspired by @mewtru on Instagram. Try clicking no... :)",
+ ]
+    },
+    {
+        title: "Idle Boba Shop",
+        to: "https://github.com/colleenmmalone/idleboba",
+        img: Imgs.Boba,
+        alt: "idle boba shop thumbnail",
+        tech: 'iOS App',
+        bg: 'bg-[#575C62]',
+        paragraphs: [
+            "This is my very first SwiftUI iOS app! It is an idle clicker boba tea shop. ",
+            "An idle clicker style of game where the user continually unlocks upgrades to increase profits. But as the profits increase, so do the costs of the upgrades...",
+            'I  am using \'s icon "Boba" from TheNounProject.com and recolored it in Figma to match the recipes I chose.'
+        ]
+    },
+    {
         title: "Dee Bakes",
         to: "https://www.figma.com/proto/lkbPnwl2TOMaTFeqXHvPTg/Inspo-Board?page-id=214%3A2045&node-id=248-1070&viewport=4626%2C-3335%2C1.06&scaling=scale-down&starting-point-node-id=248%3A1070&show-proto-sidebar=1",
         img: Imgs.Dee,
