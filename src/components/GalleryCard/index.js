@@ -14,11 +14,11 @@ const GalleryCard = ({ p, i }) => {
             </div>
 
             <div className="m-0 w-full mx-auto z-20 py-[30px] px-[20px] space-y-[4px] flex-grow">
-                <h1 className={`text-[24px] hover:underline fw-500`} >{p.title}</h1>
+                <h1 className={`text-[24px] hover:underline fw-500 font-karla`} >{p.title}</h1>
                 <h1 className={`text-[18px] opacity-80 pb-[16px] font-karla`} >{p.tech}</h1>
 
                 {/* summary  */}
-                <div className="space-y-3 font-neutral">
+                <div className="space-y-3">
                     {p.paragraphs?.map((t, d) => {
                         return (
                             <p className={` text-[18px] leading-tight`} key={`paragraph${i}-${d}`}>{t}</p>

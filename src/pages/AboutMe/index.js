@@ -16,7 +16,7 @@ const AboutMe = () => {
         </Title >
 
         <div className="flex flex-col space-y-[6px]">
-          <div className={`mx-auto mt-[20px] w-fit rounded-lg bg-gradient-to-r from-white via-[#C088FF] to-[#7146A0]  p-[2px] sm:p-1 rounded-full`}>
+          <div className={`mx-auto mt-[20px] w-fit bg-gradient-to-r from-white via-[#C088FF] to-[#7146A0] p-[2px] sm:p-1 rounded-full`}>
             <div className="mx-auto h-[200px] w-[200px] overflow-hidden rounded-full">
               <img src={Me} alt={'me'} className="" />
             </div>
