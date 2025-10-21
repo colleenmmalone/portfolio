@@ -2,6 +2,17 @@ import * as Imgs from "../../img";
 
 const Projects = [
     {
+        title: "Jonny Boom Memorial Scholarship Site",
+        to: "https://www.jonny-boom.com",
+        img: Imgs.Jonny,
+        alt: "jonny boom memorial scholarship thumbnail",
+        tech: 'Live Site',
+        bg: 'bg-[#cbf6ea]',
+        paragraphs: [
+            "My client asked me to redesign the memorial website for the scholarship in his brother's honor. Johnny loved the color green, and I pulled the shamrock green from the tshirts pictured to create a warm, crisp, and inviting look and feel.",
+ ]
+    },
+    {
         title: "Be My Valentine",
         to: "https://colleenmmalone.github.io/valentine/",
         img: Imgs.Valentine,

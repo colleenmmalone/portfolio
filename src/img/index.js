@@ -10,3 +10,4 @@ export { default as Supreme } from './thumbnails/supreme.png';
 export { default as Dee } from './thumbnails/dee.png';
 export { default as Boba } from './thumbnails/boba.png';
 export { default as Valentine } from './thumbnails/valentine.png';
+export { default as Jonny } from './thumbnails/jonny.png';

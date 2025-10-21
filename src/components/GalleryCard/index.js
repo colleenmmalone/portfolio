@@ -9,7 +9,7 @@ const GalleryCard = ({ p, i }) => {
             target="_blank" rel="noopener noreferrer" key={`project${i}`}
             className={`rounded-[12px] overflow-hidden px-0 max-w-[400px] w-full md:max-w-[800px] mx-auto relative flex flex-col md:flex-row`}>
 
-            <div className={`w-full h-auto md:h-full w-full z-20 ${p.bg}`}>
+            <div className={`w-full h-auto md:h-full w-full z-20 content-center ${p.bg}`}>
                 <img src={p.img} alt={p.alt} className="w-full lg:opacity-90 hover:opacity-100" />
             </div>
 
