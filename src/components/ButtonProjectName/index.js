@@ -1,56 +1,15 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { useSelector } from "react-redux";
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { ReactIcon, Figma } from '../../img';
 
-const ButtonProjectName = ({ label = "Project Name", figma = false, className = '', to = "#" }) => {
-
-    const theme = useSelector((state) => state.changeTheme.theme);
-    const [isVisible, setIsVisible] = useState(false);
-    const btnRef = useRef(null);
-  
-    useEffect(() => {
-      const image = btnRef.current;
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-            observer.unobserve(image);
-          }
-        },
-        {
-          rootMargin: '0px',
-          threshold: 0.1,
-        }
-      );
-  
-      observer.observe(image);
-  
-      return () => {
-        observer.unobserve(image);
-      };
-    }, []);
+const ButtonProjectName = ({ label = "Project Name", tech = '', className = '', to = "#" }) => {
 
     return (
         <div
-        ref={btnRef}
-            className={` ${isVisible ? "animate-slide" : ""} `}
-            // style={{
-            //     opacity: isVisible ? 1 : 0,
-            //     transition: 'opacity .2s ease-in-out',
-            // }}
         >
             <Link to={to} target="_blank" rel="noopener noreferrer">
-                <button className={` bg-${theme}-special flex p-0 w-full rounded-[16px] h-[4rem] overflow-hidden ${className} shadow-sm hover:bg-${theme}-nav`} >
-
-                    <div className={` bg-${theme}-light w-[25%] h-full rounded-r-full p-3 flex`}>
-                        <img src={figma ? Figma : ReactIcon} className={`mx-auto h-full`} alt={`${figma ? 'Figma' : 'React'} icon  `} />
-                    </div>
-
-                    <div className='my-auto'>
-                        <p className={`my-auto w-full pl-4 text-left text-[1.4rem] md:text-xl text-white font-inter leading-7`} >{label}</p>
-                    </div>
-
+                <button className={`w-full text-white font-karla`} >
+                        <p className={`w-full my-2 text-left text-[1.4rem] md:text-[24px] fw-500 hover:underline leading-6`} >{label}</p>
+                        <p className={`w-full text-left text-[1.4rem] md:text-[20px] opacity-80 `} >{tech}</p>
                 </button>
             </Link>
         </div>
