@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.95268195.css",
-    "main.js": "/portfolio/static/js/main.fcf97a9b.js",
+    "main.css": "/portfolio/static/css/main.066e38c1.css",
+    "main.js": "/portfolio/static/js/main.879f06ae.js",
     "static/media/quiz.png": "/portfolio/static/media/quiz.2423478cc5c147b29b5d.png",
     "static/media/dee.png": "/portfolio/static/media/dee.94bf91fe3e7cfe36cb4d.png",
     "static/media/jonny.jpg": "/portfolio/static/media/jonny.721e21df612afb110d17.jpg",
     "static/media/gauge.png": "/portfolio/static/media/gauge.7e137d2ca5e7047c7b09.png",
     "static/media/poke.png": "/portfolio/static/media/poke.23660bb5e71cf89a0040.png",
+    "static/media/cutecafe.jpg": "/portfolio/static/media/cutecafe.ec5786a25a2d55d9463f.jpg",
     "static/media/supreme.png": "/portfolio/static/media/supreme.2bc16d4293574b21f198.png",
     "static/media/band.png": "/portfolio/static/media/band.a0088337b4643e3e91f8.png",
     "static/media/boba.png": "/portfolio/static/media/boba.d0523e93238699cb7842.png",
@@ -17,11 +18,11 @@
     "static/media/LilitaOne-Regular.ttf": "/portfolio/static/media/LilitaOne-Regular.e970d047065ed950bb8c.ttf",
     "static/media/hoopla.svg": "/portfolio/static/media/hoopla.8ba791ab29ab64eff9d64c236d0dece4.svg",
     "index.html": "/portfolio/index.html",
-    "main.95268195.css.map": "/portfolio/static/css/main.95268195.css.map",
-    "main.fcf97a9b.js.map": "/portfolio/static/js/main.fcf97a9b.js.map"
+    "main.066e38c1.css.map": "/portfolio/static/css/main.066e38c1.css.map",
+    "main.879f06ae.js.map": "/portfolio/static/js/main.879f06ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.95268195.css",
-    "static/js/main.fcf97a9b.js"
+    "static/css/main.066e38c1.css",
+    "static/js/main.879f06ae.js"
   ]
 }
