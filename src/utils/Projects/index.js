@@ -36,6 +36,17 @@ const Projects = [
             'I am using Andre Buand\'s icon "Boba" from TheNounProject.com and recolored it in Figma to match the recipes I chose.'
         ]
     },
+        {
+        title: "Cute Cafe",
+        to: "https://colleenmmalone.github.io/valentine/",
+        img: Imgs.Cafe,
+        alt: "cafe site mockup thumbnail",
+        tech: 'React App',
+        bg: 'bg-[#b9f]',
+        paragraphs: [
+            "I made this app in two days just to see how much I could get done in that amount of time. It has routing, mobile responsiveness, and a few other features to form a simple site for an adorable cafe."
+ ]
+    },
     {
         title: "Dee Bakes",
         to: "https://www.figma.com/proto/lkbPnwl2TOMaTFeqXHvPTg/Inspo-Board?page-id=214%3A2045&node-id=248-1070&viewport=4626%2C-3335%2C1.06&scaling=scale-down&starting-point-node-id=248%3A1070&show-proto-sidebar=1",

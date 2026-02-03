@@ -11,3 +11,4 @@ export { default as Dee } from './thumbnails/dee.png';
 export { default as Boba } from './thumbnails/boba.png';
 export { default as Valentine } from './thumbnails/valentine.png';
 export { default as Jonny } from './thumbnails/jonny.jpg';
+export { default as Cafe } from './thumbnails/cutecafe.jpg';
